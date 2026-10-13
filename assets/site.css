@@ -1,0 +1,92 @@
+/* AI Future team sites: shared look for the FTC and FLL team websites */
+:root{
+	--bg:#f6f1e6;
+	--ink:#0b1220;
+	--muted:rgba(11,18,32,.68);
+	--line:rgba(11,18,32,.08);
+	--card:rgba(255,255,255,.9);
+	--blue:#073e77;
+	--yellow:#fece00;
+}
+*{ box-sizing:border-box; }
+body{ font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; margin:0; background:var(--bg); color:var(--ink); line-height:1.5; }
+img{ max-width:100%; display:block; }
+a{ color:var(--blue); }
+a[href*="#en-"]{ white-space:nowrap; }
+.wrap{ max-width:960px; margin:0 auto; padding:0 24px; }
+
+/* Top bar */
+.top{ background:var(--blue); color:#fff; }
+.top .wrap{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding-top:12px; padding-bottom:12px; flex-wrap:wrap; }
+.brand{ display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none; font-weight:800; }
+.brand img{ width:36px; height:36px; border-radius:50%; background:#fff; }
+.brand small{ display:block; font-weight:500; opacity:.8; font-size:12px; }
+.top nav{ display:flex; gap:6px; flex-wrap:wrap; }
+.top nav a{ color:#fff; text-decoration:none; font-size:14px; font-weight:600; padding:8px 12px; border-radius:999px; }
+.top nav a[aria-current="page"], .top nav a:hover{ background:rgba(255,255,255,.16); }
+
+/* Page header */
+.hero{ padding:40px 0 8px; }
+.hero h1{ margin:0 0 6px; font-size:34px; line-height:1.15; }
+.kicker{ font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--blue); margin:0 0 8px; }
+.lead{ font-size:18px; color:#233; max-width:62ch; margin:10px 0 0; }
+.badges{ display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 0; }
+.badge{ background:#fff; border:1px solid var(--line); padding:7px 12px; border-radius:999px; font-size:13px; }
+
+/* Cards and grids */
+main{ padding:20px 0 8px; }
+section{ margin:0 0 20px; }
+.card{ background:var(--card); padding:20px; border-radius:14px; border:1px solid var(--line); }
+.card h2{ margin:0 0 8px; font-size:22px; }
+.card h3{ margin:0 0 6px; font-size:17px; }
+.card p{ margin:0 0 10px; }
+.card p:last-child{ margin-bottom:0; }
+.accent{ border-left:6px solid var(--yellow); }
+.grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.grid.three{ grid-template-columns:repeat(3,minmax(0,1fr)); }
+.muted{ color:var(--muted); }
+ul.clean{ margin:8px 0 0; padding-left:20px; }
+ul.clean li{ margin:4px 0; }
+
+/* Buttons */
+a.btn{ display:inline-block; margin:10px 6px 0 0; padding:10px 14px; border-radius:10px; text-decoration:none; font-weight:700; font-size:14px; color:#072b55; background:var(--yellow); }
+a.btn.blue{ background:var(--blue); color:#fff; }
+a.btn.plain{ background:#fff; border:1px solid rgba(11,18,32,.14); }
+
+/* Award map: one card per FTC judged award */
+.award{ display:flex; flex-direction:column; }
+.award .tag{ align-self:flex-start; font-size:12px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; background:var(--blue); color:#fff; padding:4px 10px; border-radius:999px; margin-bottom:10px; }
+.award .tag.soon{ background:#fff; color:var(--muted); border:1px solid var(--line); }
+.award a.btn{ margin-top:auto; align-self:flex-start; }
+
+/* Event strip */
+.event{ display:flex; gap:14px; align-items:center; margin-top:14px; padding:12px 14px; border-radius:12px; background:var(--blue); color:#fff; }
+.event b{ display:block; }
+
+/* Photo gallery */
+.gallery{ display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-top:12px; }
+.gallery figure{ margin:0; }
+.gallery img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:10px; border:1px solid var(--line); background:#fff; }
+
+/* Notebook table */
+.table-wrap{ overflow-x:auto; margin-top:12px; }
+table{ width:100%; border-collapse:collapse; font-size:15px; }
+th, td{ text-align:left; padding:10px 8px; border-top:1px solid var(--line); vertical-align:top; }
+th{ font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); border-top:0; }
+td.id{ font-weight:800; color:var(--blue); white-space:nowrap; }
+
+/* Steps */
+.steps{ counter-reset:step; list-style:none; padding:0; margin:10px 0 0; display:grid; gap:8px; }
+.steps li{ counter-increment:step; display:flex; gap:10px; align-items:flex-start; }
+.steps li::before{ content:counter(step); flex:none; width:26px; height:26px; border-radius:50%; background:var(--yellow); color:#072b55; font-weight:800; font-size:13px; display:grid; place-items:center; }
+
+footer{ padding:24px 0 36px; font-size:13px; color:var(--muted); }
+footer .wrap{ display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+
+@media (max-width:760px){
+	.wrap{ padding:0 16px; }
+	.hero{ padding-top:28px; }
+	.hero h1{ font-size:28px; }
+	.lead{ font-size:16px; }
+	.grid, .grid.three{ grid-template-columns:1fr; }
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Robot · AI Future · FTC Team #31591</title>
+	<meta name="description" content="How AI Future's BIOBUZZ robot works: drivetrain, intake, sorter, shooter and electronics, designed in Onshape and built in-house." />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="AI Future · FTC Team #31591" />
+	<meta property="og:title" content="Our BIOBUZZ robot · AI Future #31591" />
+	<meta property="og:description" content="Each subsystem, what it does, and how we made its parts in-house." />
+	<meta property="og:url" content="https://gio1880.github.io/ai-future-ftc-website/robot.html" />
+	<meta property="og:image" content="https://gio1880.github.io/ai-future-ftc-website/img/share-preview.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="icon" href="img/favicon.png" type="image/png" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+	<header class="top">
+		<div class="wrap">
+			<a class="brand" href="index.html"><img src="img/apple-touch-icon.png" alt="" /><span>AI Future<small>FTC Team #31591</small></span></a>
+			<nav aria-label="Main">
+				<a href="index.html">Home</a>
+				<a href="robot.html" aria-current="page">Robot</a>
+				<a href="notebook.html">Engineering Notebook</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="wrap">
+		<div class="hero">
+			<p class="kicker">Design · BIOBUZZ 2026–27</p>
+			<h1>Our robot</h1>
+			<p class="lead">We designed the whole robot as one model in Onshape and made many of its parts ourselves: plywood plates on a laser cutter and custom pieces on a 3D printer.</p>
+		</div>
+
+		<main>
+			<section class="card accent" aria-labelledby="how-title">
+				<h2 id="how-title">How we design and build</h2>
+				<p>Our custom parts are written as code in Onshape (FeatureScript), so changing one size updates every part that depends on it. Every change follows the same steps:</p>
+				<ol class="steps">
+					<li><span><b>Change the model</b> in Onshape.</span></li>
+					<li><span><b>Rebuild and check for clashes,</b> so no two parts overlap and the robot still fits inside the 18-inch starting size.</span></li>
+					<li><span><b>Export the files:</b> laser-cutting files for plywood plates, STL files for 3D printing.</span></li>
+					<li><span><b>Make and fit the part,</b> then test it on the robot.</span></li>
+					<li><span><b>Write it up</b> in our <a href="notebook.html">engineering notebook</a>: the problem, the numbers, the options and the result.</span></li>
+				</ol>
+			</section>
+
+			<section aria-labelledby="sub-title">
+				<h2 id="sub-title" style="margin:28px 0 12px;">Subsystems</h2>
+				<div class="grid">
+					<article class="card">
+						<h3>Drivetrain</h3>
+						<p>Chain-driven drive pods. We worked out the chain length and axle standoff for the pod spacing, and fixed splice bolts that were hitting the chain. <a href="notebook.html#en-07">EN-07</a></p>
+					</article>
+					<article class="card">
+						<h3>Intake</h3>
+						<p>Pulls Pollen into the robot. When we switched to new tubing, we designed 3D-printed end caps to fit it. <a href="notebook.html#en-10">EN-10</a></p>
+					</article>
+					<article class="card">
+						<h3>Sorter</h3>
+						<p>A guide rail and ramp that move Pollen toward the shooter. The ramp kept breaking, so we redesigned the rail and added a laser-cut back wall. <a href="notebook.html#en-04">EN-04</a> · <a href="notebook.html#en-09">EN-09</a></p>
+					</article>
+					<article class="card">
+						<h3>Shooter</h3>
+						<p>Launches Pollen to score. We designed laser-cut side walls to enclose it. <a href="notebook.html#en-08">EN-08</a></p>
+					</article>
+					<article class="card">
+						<h3>Frame</h3>
+						<p>Our plates were bigger than the laser cutter's bed, so we split them and joined the pieces with seam clamps. The clamps took three versions to get right. <a href="notebook.html#en-01">EN-01</a> · <a href="notebook.html#en-05">EN-05</a></p>
+					</article>
+					<article class="card">
+						<h3>Electronics</h3>
+						<p>A REV Control Hub drawer and back plate designed so we can reach the wiring quickly. <a href="notebook.html#en-11">EN-11</a></p>
+					</article>
+				</div>
+			</section>
+
+			<section class="card" aria-labelledby="parts-title">
+				<h2 id="parts-title">What it's made of</h2>
+				<ul class="clean">
+					<li><b>Laser-cut plywood</b> for plates, walls and the back plate</li>
+					<li><b>3D-printed PLA</b> for custom parts like end caps and mounts</li>
+					<li><b>REV through-bore bearings</b> <a href="notebook.html#en-02">EN-02</a></li>
+					<li><b>8-32 bolts</b> <a href="notebook.html#en-03">EN-03</a></li>
+					<li><b>goBILDA wheels</b> and a <b>REV Control Hub</b></li>
+				</ul>
+			</section>
+		</main>
+	</div>
+
+	<footer>
+		<div class="wrap">
+			<span>AI Future · FTC Team #31591</span>
+			<span><a href="index.html">Home</a> · <a href="notebook.html">Engineering Notebook</a></span>
+		</div>
+	</footer>
+</body>
+</html>
