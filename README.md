@@ -5,9 +5,17 @@ Plain HTML and CSS, published with GitHub Pages from the `main` branch.
 
 | Page | What it's for |
 |---|---|
-| `index.html` | Home: the team, this season, links for judges, photos |
-| `robot.html` | Design award: subsystems and how we build |
-| `notebook.html` | Think award: engineering notebook entries |
+| `index.html` | Home: this season so far, next event, links for judges |
+| `robot.html` | Design + Control: the robot right now, how we build in-house, how we control it |
+| `notebook.html` | Think award: the 5 design stories and the full EN-01..EN-44 index |
 | `assets/site.css` | Shared look, also used for the FLL team site |
 
-Photos go in `img/` as compressed `.webp` files (about 1400 px on the long side).
+Photos go in `img/` as compressed `.webp` files (about 1400 px on the long side), with `loading="lazy"` and alt text.
+
+| Folder | What's in it |
+|---|---|
+| `img/notebook/intake/`, `pollen/`, `nectar/`, `drive/`, `inhouse/` | Pictures for each notebook story (CAD, drawings, bench photos) |
+| `img/robot/` | Robot page pictures |
+| `img/build/` | Last season's team photos (not shown on any page: no guardian consent for faces yet) |
+
+No student names or faces on public pages. Only parts, CAD, the robot and whiteboards.
