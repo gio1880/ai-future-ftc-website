@@ -90,3 +90,37 @@ footer .wrap{ display:flex; justify-content:space-between; gap:12px; flex-wrap:w
 	.lead{ font-size:16px; }
 	.grid, .grid.three{ grid-template-columns:1fr; }
 }
+
+/* Season stats (home page) */
+.stats{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:12px; }
+.stat{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px; }
+.stat b{ display:block; font-size:30px; line-height:1.1; color:var(--blue); }
+.stat span{ font-size:14px; color:var(--muted); }
+
+/* Notebook stories */
+.story-nav{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.story-nav a{ background:#fff; border:1px solid var(--line); border-radius:999px; padding:7px 12px; font-size:14px; font-weight:600; text-decoration:none; }
+.goal{ background:var(--blue); color:#fff; border-radius:10px; padding:10px 14px; margin:10px 0 14px; }
+.goal b{ color:var(--yellow); }
+.card h4{ margin:16px 0 6px; font-size:15px; text-transform:uppercase; letter-spacing:.05em; color:var(--blue); }
+.card ul.clean + p, .card ol + p{ margin-top:10px; }
+.strip{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:12px; }
+.strip figure{ margin:0; background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px; position:relative; }
+.strip img{ width:100%; height:auto; aspect-ratio:4/3; object-fit:contain; background:#fff; border-radius:8px; }
+.strip figcaption{ font-size:14px; margin-top:8px; }
+.strip figcaption b{ display:block; color:var(--blue); }
+.strip figcaption ul{ margin:6px 0 0; padding-left:18px; }
+.strip figcaption li{ margin:2px 0; }
+.pill{ display:inline-block; font-size:12px; font-weight:700; padding:2px 9px; border-radius:999px; background:#e7ecf3; color:#233; white-space:nowrap; }
+.pill.built{ background:#dff3e4; color:#14532d; }
+.pill.test{ background:#fff4c2; color:#5b4500; }
+.status{ margin-top:14px; padding:10px 14px; border-radius:10px; background:#fff; border:1px solid var(--line); }
+.lesson{ margin-top:10px; padding:10px 14px; border-radius:10px; background:#fff8d6; border-left:5px solid var(--yellow); }
+.big-figure{ margin:12px 0 0; }
+.big-figure img{ width:100%; height:auto; border-radius:10px; border:1px solid var(--line); background:#fff; }
+.big-figure figcaption{ font-size:14px; color:var(--muted); margin-top:6px; }
+
+@media (max-width:760px){
+	.stats{ grid-template-columns:1fr; }
+	.strip{ grid-template-columns:1fr; }
+}

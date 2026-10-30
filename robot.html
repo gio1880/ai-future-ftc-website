@@ -4,11 +4,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Robot · AI Future · FTC Team #31591</title>
-	<meta name="description" content="How AI Future's BIOBUZZ robot works: drivetrain, intake, sorter, shooter and electronics, designed in Onshape and built in-house." />
+	<meta name="description" content="How AI Future's BIOBUZZ robot works: drivetrain, intake and sorter, pollen and nectar shooters, how we build it in-house and how we control it." />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="AI Future · FTC Team #31591" />
 	<meta property="og:title" content="Our BIOBUZZ robot · AI Future #31591" />
-	<meta property="og:description" content="Each subsystem, what it does, and how we made its parts in-house." />
+	<meta property="og:description" content="Where our robot is now, how we build it from plywood and PLA, and how we control it." />
 	<meta property="og:url" content="https://gio1880.github.io/ai-future-ftc-website/robot.html" />
 	<meta property="og:image" content="https://gio1880.github.io/ai-future-ftc-website/img/share-preview.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
@@ -32,68 +32,99 @@
 		<div class="hero">
 			<p class="kicker">Design · BIOBUZZ 2026–27</p>
 			<h1>Our robot</h1>
-			<p class="lead">We designed the whole robot as one model in Onshape and made many of its parts ourselves: plywood plates on a laser cutter and custom pieces on a 3D printer.</p>
+			<p class="lead">We design the whole robot in CAD (Onshape) and make most of its parts ourselves: plywood plates on a laser cutter and custom pieces on 3D printers. This page shows where the robot is today, end of October.</p>
 		</div>
 
 		<main>
-			<section class="card accent" aria-labelledby="how-title">
-				<h2 id="how-title">How we design and build</h2>
-				<p>Our custom parts are written as code in Onshape (FeatureScript), so changing one size updates every part that depends on it. Every change follows the same steps:</p>
+			<section class="card accent" id="overview" aria-labelledby="overview-title">
+				<h2 id="overview-title">The robot right now</h2>
+				<p>The robot picks up two ball sizes, sorts them, and shoots each one with its own shooter. Both shooters sit at the back and shoot <b>forward, over the intake</b>: the Pollen shooter low and centre-left, the Nectar shooter high on the right. Each ball stays at the height it already has, so the two paths never cross.</p>
+				<figure class="big-figure">
+					<img src="img/robot/shooters-on-robot.webp" width="1400" height="1050" alt="CAD layout views of the whole robot from the top, side and front: green pollen shooter low on the left, orange nectar shooter high on the right, intake rollers at the front" decoding="async" />
+					<figcaption>CAD layout from Oct 27 (<a href="notebook.html#en-44">EN-44</a>): both shooters placed on the drivetrain with the intake. In CAD nothing clashes, the ball flight paths are clear, and it fits the 18 in box (top of the robot at 438 of 457 mm).</figcaption>
+				</figure>
+				<div class="table-wrap">
+					<table>
+						<thead><tr><th>Part</th><th>What it is now</th><th>Status</th></tr></thead>
+						<tbody>
+							<tr><td><b>Drivetrain</b></td><td>Two chain-driven pods with goBILDA motors and 104 mm wheels. A plywood rear cross panel is designed because our metal U-channel is 10 mm too short. <a href="notebook.html#story-drive">Story D</a></td><td><span class="pill test">Built, testing</span></td></tr>
+							<tr><td><b>Intake + sorter</b></td><td>A wide tubing roller (345 mm, wheel to wheel) at the front. Pollen goes through a 78 mm slot in the wall, Nectar goes over the top. Robot 17.89 in long. <a href="notebook.html#en-38">EN-38</a></td><td><span class="pill">CAD + files ready</span><br /><span class="muted" style="font-size:13px;">bench kit tested</span></td></tr>
+							<tr><td><b>Pollen shooter v4</b></td><td>One-piece printed side walls with the motor bracket, a geared hood moved by a servo (20–55°), and a right-angle gearbox on the motor. Sits on a plywood platform. <a href="notebook.html#en-39">EN-39</a></td><td><span class="pill test">Built, bench tested</span></td></tr>
+							<tr><td><b>Nectar shooter v1</b></td><td>Same idea as pollen v4, sized for the bigger ball (hood radius 135.44 mm), with thicker gears and straight screwdriver holes. <a href="notebook.html#en-41">EN-41</a></td><td><span class="pill">CAD only</span></td></tr>
+							<tr><td><b>Shooters on the robot</b></td><td>Pollen shaft 132 mm off the field, Nectar shaft 303 mm. Still to design: the nectar tray behind the wall, the guides under each wheel, and the mounts. <a href="notebook.html#en-44">EN-44</a></td><td><span class="pill">CAD layout only</span></td></tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="card" id="build" aria-labelledby="build-title">
+				<h2 id="build-title">How we build in-house</h2>
+				<div class="grid">
+					<div>
+						<h3>Laser cutter</h3>
+						<ul class="clean">
+							<li><b>1/4 in (6.35 mm) plywood</b> for plates, walls and panels.</li>
+							<li>The bed is <b>305 × 381 mm</b>, smaller than our side plates. We split big plates with seams that step around bolt holes and add a splice bracket on every seam. <a href="notebook.html#en-01">EN-01</a></li>
+							<li>We cut small test strips first (holes of 11.9, 12.0 and 12.1 mm) to find the best bearing fit. <a href="notebook.html#en-08">EN-08</a></li>
+							<li>Parts get engraved labels (FRONT, TOP) so they go on the right way.</li>
+						</ul>
+					</div>
+					<div>
+						<h3>3D printers</h3>
+						<ul class="clean">
+							<li><b>PLA</b> on a <b>Bambu A1</b> and <b>P1S</b>, both with a <b>256 mm</b> bed.</li>
+							<li>We design every print to fit that bed. The one-piece shooter walls are 245 mm (pollen) and 244 mm (nectar) long.</li>
+							<li>Long thin parts print on their side, so the layers run the long way and don't snap. <a href="notebook.html#en-09">EN-09</a></li>
+							<li>When a tall print failed, we split it in two with pegs. <a href="notebook.html#en-26">EN-26</a></li>
+						</ul>
+					</div>
+				</div>
+				<h3 style="margin-top:16px;">One bolt size</h3>
+				<p>Every wood joint uses <b>#8-32</b> bolts in <b>4.5 mm</b> holes, with washers and nylon lock nuts. REV parts stay M3. Our screw length rule is <b>material + 9.2 mm</b> (two washers, the nut and one thread showing). We put all <b>287</b> bolts into the CAD so the clash check catches heads and nuts that hit other parts. <a href="notebook.html#en-03">EN-03</a> · <a href="notebook.html#en-13">EN-13</a></p>
+				<h3 style="margin-top:16px;">Every change follows the same steps</h3>
 				<ol class="steps">
-					<li><span><b>Change the model</b> in Onshape.</span></li>
-					<li><span><b>Rebuild and check for clashes,</b> so no two parts overlap and the robot still fits inside the 18-inch starting size.</span></li>
-					<li><span><b>Export the files:</b> laser-cutting files for plywood plates, STL files for 3D printing.</span></li>
-					<li><span><b>Make and fit the part,</b> then test it on the robot.</span></li>
+					<li><span><b>Change the model</b> in CAD.</span></li>
+					<li><span><b>Check for clashes,</b> so no two parts overlap, every screw can be reached, and the robot still fits inside 18 inches.</span></li>
+					<li><span><b>Export the files:</b> laser-cutting files for plywood, STL files for printing.</span></li>
+					<li><span><b>Make and fit the part,</b> then test it.</span></li>
 					<li><span><b>Write it up</b> in our <a href="notebook.html">engineering notebook</a>: the problem, the numbers, the options and the result.</span></li>
 				</ol>
 			</section>
 
-			<section aria-labelledby="sub-title">
-				<h2 id="sub-title" style="margin:28px 0 12px;">Subsystems</h2>
+			<section class="card" id="control" aria-labelledby="control-title">
+				<h2 id="control-title">Control</h2>
+				<p>What each sensor does, the problem it solves, and how it works. No code needed to follow it.</p>
 				<div class="grid">
-					<article class="card">
-						<h3>Drivetrain</h3>
-						<p>Chain-driven drive pods. We worked out the chain length and axle standoff for the pod spacing, and fixed splice bolts that were hitting the chain. <a href="notebook.html#en-07">EN-07</a></p>
+					<article>
+						<h3>Shooter speed control</h3>
+						<ul class="clean">
+							<li><b>Sensor:</b> an encoder on each shooter motor counts how fast the motor turns.</li>
+							<li><b>Problem:</b> with a fixed power, the wheel slows down when the battery runs low and when a ball goes through. Then shots land in different places.</li>
+							<li><b>How it works:</b> we give each shooter a target speed. Many times a second the Control Hub compares the real speed with the target and adds or takes away power (a PIDF loop: a base power for that speed, plus a correction that grows with the error).</li>
+							<li><b>Tuning:</b> FTC Dashboard draws live graphs of target vs real speed on a laptop, so we can change the numbers and watch the line. Our goal: get back within 5% of the target after each shot.</li>
+							<li><b>Status:</b> the code builds, but it hasn't run on the robot yet, so we have no tuned values or test numbers. <a href="notebook.html#en-43">EN-43</a></li>
+						</ul>
 					</article>
-					<article class="card">
-						<h3>Intake</h3>
-						<p>Pulls Pollen into the robot. When we switched to new tubing, we designed 3D-printed end caps to fit it. <a href="notebook.html#en-10">EN-10</a></p>
-					</article>
-					<article class="card">
-						<h3>Sorter</h3>
-						<p>A guide rail and ramp that move Pollen toward the shooter. The ramp kept breaking, so we redesigned the rail and added a laser-cut back wall. <a href="notebook.html#en-04">EN-04</a> · <a href="notebook.html#en-09">EN-09</a></p>
-					</article>
-					<article class="card">
-						<h3>Shooter</h3>
-						<p>Launches Pollen to score. We designed laser-cut side walls to enclose it. <a href="notebook.html#en-08">EN-08</a></p>
-					</article>
-					<article class="card">
-						<h3>Frame</h3>
-						<p>Our plates were bigger than the laser cutter's bed, so we split them and joined the pieces with seam clamps. The clamps took three versions to get right. <a href="notebook.html#en-01">EN-01</a> · <a href="notebook.html#en-05">EN-05</a></p>
-					</article>
-					<article class="card">
-						<h3>Electronics</h3>
-						<p>A REV Control Hub drawer and back plate designed so we can reach the wiring quickly. <a href="notebook.html#en-11">EN-11</a></p>
+					<article>
+						<h3>Knowing where the robot is</h3>
+						<ul class="clean">
+							<li><b>Sensors:</b> encoders on the four drive motors, and the gyro (IMU) built into the Control Hub.</li>
+							<li><b>Problem:</b> in autonomous nobody drives, so the robot has to know where it is on the field.</li>
+							<li><b>How it works:</b> our drive code (Road Runner) adds up how far each wheel turned to work out the robot's position, and the gyro tells it which way it is facing.</li>
+							<li><b>Also ready:</b> we have code for two extra position sensors (goBILDA Pinpoint and SparkFun OTOS), but they are not switched on yet.</li>
+							<li><b>Status:</b> no tuning results in our notebook yet for this season's robot.</li>
+						</ul>
 					</article>
 				</div>
-			</section>
-
-			<section class="card" aria-labelledby="parts-title">
-				<h2 id="parts-title">What it's made of</h2>
-				<ul class="clean">
-					<li><b>Laser-cut plywood</b> for plates, walls and the back plate</li>
-					<li><b>3D-printed PLA</b> for custom parts like end caps and mounts</li>
-					<li><b>REV through-bore bearings</b> <a href="notebook.html#en-02">EN-02</a></li>
-					<li><b>8-32 bolts</b> <a href="notebook.html#en-03">EN-03</a></li>
-					<li><b>goBILDA wheels</b> and a <b>REV Control Hub</b></li>
-				</ul>
+				<h3 style="margin-top:16px;">Shooter hood angle</h3>
+				<p>A servo turns a small gear that moves each shooter's hood between <b>20° and 55°</b>, so we can change how high and far the ball goes. On the nectar shooter, hard stops keep the hood from moving past either end. <a href="notebook.html#en-39">EN-39</a> · <a href="notebook.html#en-41">EN-41</a></p>
 			</section>
 		</main>
 	</div>
 
 	<footer>
 		<div class="wrap">
-			<span>AI Future · FTC Team #31591</span>
+			<span>AI Future · FTC Team #31591 · Built by Team #31591 with help from Claude</span>
 			<span><a href="index.html">Home</a> · <a href="notebook.html">Engineering Notebook</a></span>
 		</div>
 	</footer>
