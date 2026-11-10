@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
 	<header class="top">
 		<div class="wrap">
 			<a class="brand" href="index.html"><img src="img/apple-touch-icon.png" alt="" /><span>AI Future<small>FTC Team #31591</small></span></a>
@@ -30,18 +31,27 @@
 		</div>
 	</header>
 
-	<div class="wrap">
-		<div class="hero">
-			<p class="kicker">FIRST Tech Challenge · New York City</p>
-			<h1>AI Future, Team #31591</h1>
-			<p class="lead">We're a FIRST Tech Challenge team from AI Future. We design our robot in CAD, make many of its parts ourselves on a laser cutter and 3D printer, and write up the problems we solve in our engineering notebook.</p>
-			<div class="badges">
-				<div class="badge">Season: BIOBUZZ 2026–27</div>
-				<div class="badge">In-house robot build</div>
+	<main class="wrap" id="main-content" tabindex="-1">
+		<section class="hero hero-home" aria-labelledby="home-title">
+			<div>
+				<p class="kicker">FIRST Tech Challenge · New York City</p>
+				<h1 id="home-title">BIOBUZZ <span>2026–27</span></h1>
+				<p class="lead">We're a FIRST Tech Challenge team from AI Future. We design our robot in CAD, make many of its parts ourselves on a laser cutter and 3D printer, and write up the problems we solve in our engineering notebook.</p>
+				<div class="badges">
+					<div class="badge">In-house robot build</div>
+				</div>
+				<div class="hero-actions">
+					<a class="btn" href="robot.html">Explore the robot</a>
+					<a class="btn plain" href="notebook.html">Read the notebook</a>
+				</div>
 			</div>
-		</div>
+			<figure class="big-figure hero-figure">
+				<img src="img/robot/shooters-on-robot.webp" width="1400" height="1050" alt="Top, side and front CAD views showing the two shooters and front intake on the robot" decoding="async" />
+				<figcaption>Our BIOBUZZ robot in CAD. <a href="robot.html#overview">See how it works</a>.</figcaption>
+			</figure>
+		</section>
 
-		<main>
+		<div class="page-content">
 			<section class="card accent" aria-labelledby="season-title">
 				<p class="kicker">This season</p>
 				<h2 id="season-title">BIOBUZZ 2026–27</h2>
@@ -63,7 +73,7 @@
 				</div>
 			</section>
 
-			<section class="card grid" aria-labelledby="sponsor-title">
+			<section class="card" aria-labelledby="sponsor-title">
 				<div>
 					<p class="kicker">In-kind sponsorship</p>
 					<h2 id="sponsor-title">Help us build our BIOBUZZ robot</h2>
@@ -75,10 +85,6 @@
 					</ul>
 					<a class="btn blue" href="https://aifuture.nyc/sponsor?interest=ftc#inquiry">Sponsor Team #31591</a>
 				</div>
-				<figure class="big-figure">
-					<img src="img/robot/shooters-on-robot.webp" width="1400" height="1050" alt="Top, side and front CAD views showing the two shooters and front intake on the robot" loading="lazy" decoding="async" />
-					<figcaption>Our BIOBUZZ robot in CAD. <a href="robot.html#overview">See how it works</a>.</figcaption>
-				</figure>
 			</section>
 
 			<section aria-labelledby="awards-title">
@@ -106,8 +112,8 @@
 				<a class="btn blue" href="https://www.tiktok.com/@aifuturenyc" target="_blank" rel="noreferrer">TikTok</a>
 				<a class="btn blue" href="https://www.youtube.com/@AIFutureRobotics" target="_blank" rel="noreferrer">YouTube</a>
 			</section>
-		</main>
-	</div>
+		</div>
+	</main>
 
 	<footer>
 		<div class="wrap">
