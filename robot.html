@@ -32,29 +32,29 @@
 		<div class="hero">
 			<p class="kicker">Design · BIOBUZZ 2026–27</p>
 			<h1>Our robot</h1>
-			<p class="lead">We design the whole robot in CAD (Onshape) and make most of its parts ourselves: plywood plates on a laser cutter and custom pieces on 3D printers. This page shows where the robot is today, end of October.</p>
+			<p class="lead">We design the whole robot in CAD (Onshape) and make most of its parts ourselves: plywood plates on a laser cutter and custom pieces on 3D printers. This page shows our Nov 6 qualifier design and the tests still ahead.</p>
 		</div>
 
 		<main>
 			<section class="card accent" id="overview" aria-labelledby="overview-title">
 				<h2 id="overview-title">The robot right now</h2>
-				<p>The robot picks up two ball sizes, sorts them, and shoots each one with its own shooter. Both shooters sit at the back and shoot <b>forward, over the intake</b>: the Pollen shooter low and centre-left, the Nectar shooter high on the right. Each ball stays at the height it already has, so the two paths never cross.</p>
+				<p>We chose a Pollen-only robot for the qualifier. The front rollers collect balls from the floor, and a hinged wedge lifts Pollen from the flower. A powered feeder hands the ball to Shooter B, which shoots forward over the intake. We are keeping the Nectar design for later. <a href="notebook.html#en-59">EN-59</a></p>
 				<figure class="big-figure">
-					<img src="img/robot/shooters-on-robot.webp" width="1400" height="1050" alt="CAD layout views of the whole robot from the top, side and front: green pollen shooter low on the left, orange nectar shooter high on the right, intake rollers at the front" decoding="async" />
-					<figcaption>CAD layout from Oct 27 (<a href="notebook.html#en-44">EN-44</a>): both shooters placed on the drivetrain with the intake. In CAD nothing clashes, the ball flight paths are clear, and it fits the 18 in box (top of the robot at 438 of 457 mm).</figcaption>
+					<img src="img/robot/qualifier-cad-en83.webp" width="1400" height="900" alt="Top view of the Pollen-only qualifier robot CAD, color-labeled with plywood frame, drive pods, Pollen shooter, intake rollers and flower wedge" loading="lazy" decoding="async" />
+					<figcaption>Local qualifier CAD, Nov 6 (<a href="notebook.html#en-83">EN-83</a>). The view shows selected parts with the flower wedge lowered. With the wedge folded for the start, the model measures <b>453.4 × 455.35 × 347.19 mm</b> in the starting position. We still need to measure the assembled robot.</figcaption>
 				</figure>
 				<div class="table-wrap">
 					<table>
-						<thead><tr><th>Part</th><th>What it is now</th><th>Status</th></tr></thead>
+						<thead><tr><th>Part</th><th>What it is now</th><th>Evidence</th></tr></thead>
 						<tbody>
-							<tr><td><b>Drivetrain</b></td><td>Two chain-driven pods with goBILDA motors and 104 mm wheels. A plywood rear cross panel is designed because our metal U-channel is 10 mm too short. <a href="notebook.html#story-drive">Story D</a></td><td><span class="pill test">Built, testing</span></td></tr>
-							<tr><td><b>Intake + sorter</b></td><td>A wide tubing roller (345 mm, wheel to wheel) at the front. Pollen goes through a 78 mm slot in the wall, Nectar goes over the top. Robot 17.89 in long. <a href="notebook.html#en-38">EN-38</a></td><td><span class="pill">CAD + files ready</span><br /><span class="muted" style="font-size:13px;">bench kit tested</span></td></tr>
-							<tr><td><b>Pollen shooter v4</b></td><td>One-piece printed side walls with the motor bracket, a geared hood moved by a servo (20–55°), and a right-angle gearbox on the motor. Sits on a plywood platform. <a href="notebook.html#en-39">EN-39</a></td><td><span class="pill test">Built, bench tested</span></td></tr>
-							<tr><td><b>Nectar shooter v1</b></td><td>Same idea as pollen v4, sized for the bigger ball (hood radius 135.44 mm), with thicker gears and straight screwdriver holes. <a href="notebook.html#en-41">EN-41</a></td><td><span class="pill">CAD only</span></td></tr>
-							<tr><td><b>Shooters on the robot</b></td><td>Pollen shaft 132 mm off the field, Nectar shaft 303 mm. Still to design: the nectar tray behind the wall, the guides under each wheel, and the mounts. <a href="notebook.html#en-44">EN-44</a></td><td><span class="pill">CAD layout only</span></td></tr>
+							<tr><td><b>Intake and flower wedge</b></td><td>A shortened first roller and a compact wedge on two short arms. The wedge moves out of the shot path before we shoot. <a href="notebook.html#en-72">EN-72</a> · <a href="notebook.html#en-78">EN-78</a></td><td><span class="pill">CAD checked</span> · flower pickup trials pending</td></tr>
+							<tr><td><b>Pollen shooter B</b></td><td>A fixed feed ramp, stiffer hood and 26-tooth servo gear. The hood moves from 20° to 55° in the model. <a href="notebook.html#en-74">EN-74</a></td><td><span class="pill">CAD checked</span> · physical gear fit and controlled shots pending</td></tr>
+							<tr><td><b>Drive pods</b></td><td>Printed ties join the plywood side plates. Short screws thread into nuts trapped in the prints. <a href="notebook.html#en-83">EN-83</a></td><td><span class="pill">CAD checked</span> · physical fit and load tests pending</td></tr>
+							<tr><td><b>Electronics</b></td><td>The rear wall guards the recessed power switch from bumps. <a href="notebook.html#en-81">EN-81</a></td><td><span class="pill">CAD checked</span> · installed fit pending</td></tr>
 						</tbody>
 					</table>
 				</div>
+				<p>Our earlier bench tests and two-shooter layout are in the <a href="notebook.html">engineering notebook</a>. We still need current robot photos, counted pickup and shot trials, a wheel speed trace and localization return tests. <a href="notebook.html#en-82">EN-82</a></p>
 			</section>
 
 			<section class="card" id="build" aria-labelledby="build-title">
@@ -73,14 +73,14 @@
 						<h3>3D printers</h3>
 						<ul class="clean">
 							<li><b>PLA</b> on a <b>Bambu A1</b> and <b>P1S</b>, both with a <b>256 mm</b> bed.</li>
-							<li>We design every print to fit that bed. The one-piece shooter walls are 245 mm (pollen) and 244 mm (nectar) long.</li>
+							<li>We design every print to fit that bed. In the latest drive update, we checked that all 22 revised prints fit the bed. <a href="notebook.html#en-83">EN-83</a></li>
 							<li>Long thin parts print on their side, so the layers run the long way and don't snap. <a href="notebook.html#en-09">EN-09</a></li>
 							<li>When a tall print failed, we split it in two with pegs. <a href="notebook.html#en-26">EN-26</a></li>
 						</ul>
 					</div>
 				</div>
-				<h3 style="margin-top:16px;">One bolt size</h3>
-				<p>Every wood joint uses <b>#8-32</b> bolts in <b>4.5 mm</b> holes, with washers and nylon lock nuts. REV parts stay M3. Our screw length rule is <b>material + 9.2 mm</b> (two washers, the nut and one thread showing). We put all <b>287</b> bolts into the CAD so the clash check catches heads and nuts that hit other parts. <a href="notebook.html#en-03">EN-03</a> · <a href="notebook.html#en-13">EN-13</a></p>
+				<h3 style="margin-top:16px;">Fasteners and assembly</h3>
+				<p>We use <b>#8-32</b> fasteners for the plywood frame and keep M3 screws where they fit the hardware. The latest drive ties use separate short screws and captive lock nuts so we can assemble each side on its own. <a href="notebook.html#en-03">EN-03</a> · <a href="notebook.html#en-83">EN-83</a></p>
 				<h3 style="margin-top:16px;">Every change follows the same steps</h3>
 				<ol class="steps">
 					<li><span><b>Change the model</b> in CAD.</span></li>
@@ -111,13 +111,13 @@
 							<li><b>Sensors:</b> encoders on the four drive motors, and the gyro (IMU) built into the Control Hub.</li>
 							<li><b>Problem:</b> in autonomous nobody drives, so the robot has to know where it is on the field.</li>
 							<li><b>How it works:</b> our drive code (Road Runner) adds up how far each wheel turned to work out the robot's position, and the gyro tells it which way it is facing.</li>
-							<li><b>Also ready:</b> we have code for two extra position sensors (goBILDA Pinpoint and SparkFun OTOS), but they are not switched on yet.</li>
+							<li><b>Selected in code:</b> Road Runner uses the drive encoders and IMU. The goBILDA Pinpoint option exists in the code. It is inactive, and the tracking wheel mounts are a CAD study. <a href="notebook.html#en-82">EN-82</a></li>
 							<li><b>Status:</b> no tuning results in our notebook yet for this season's robot.</li>
 						</ul>
 					</article>
 				</div>
 				<h3 style="margin-top:16px;">Shooter hood angle</h3>
-				<p>A servo turns a small gear that moves each shooter's hood between <b>20° and 55°</b>, so we can change how high and far the ball goes. On the nectar shooter, hard stops keep the hood from moving past either end. <a href="notebook.html#en-39">EN-39</a> · <a href="notebook.html#en-41">EN-41</a></p>
+				<p>In Shooter B CAD, the servo turns <b>236.9°</b> through a 26-tooth gear to move the hood from <b>20° to 55°</b>. We still need to measure actual travel and check gear fit on the bench. <a href="notebook.html#en-74">EN-74</a></p>
 			</section>
 		</main>
 	</div>
