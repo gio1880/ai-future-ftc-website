@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
 	<header class="top">
 		<div class="wrap">
 			<a class="brand" href="index.html"><img src="img/apple-touch-icon.png" alt="" /><span>AI Future<small>FTC Team #31591</small></span></a>
@@ -28,7 +29,7 @@
 		</div>
 	</header>
 
-	<div class="wrap">
+	<main class="wrap" id="main-content" tabindex="-1">
 		<div class="hero">
 			<p class="kicker">Think · BIOBUZZ 2026–27</p>
 			<h1>Engineering Notebook</h1>
@@ -43,7 +44,7 @@
 			</div>
 		</div>
 
-		<main>
+		<div class="page-content">
 			<section class="card accent" aria-labelledby="format-title">
 				<h2 id="format-title">What each entry covers</h2>
 				<ol class="steps">
@@ -310,7 +311,7 @@
 			<section class="card" aria-labelledby="entries-title">
 				<h2 id="entries-title">All entries</h2>
 				<p class="muted">Every entry, in order. "CAD only" means designed but not built yet.</p>
-				<div class="table-wrap">
+				<div class="table-wrap" tabindex="0" role="region" aria-label="Engineering notebook entries">
 					<table>
 						<thead><tr><th>Entry</th><th>Date</th><th>Part of the robot</th><th>What it's about</th><th>Status</th><th>Story</th></tr></thead>
 						<tbody>
@@ -362,8 +363,8 @@
 					</table>
 				</div>
 			</section>
-		</main>
-	</div>
+		</div>
+	</main>
 
 	<footer>
 		<div class="wrap">

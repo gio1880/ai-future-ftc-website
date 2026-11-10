@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
 	<header class="top">
 		<div class="wrap">
 			<a class="brand" href="index.html"><img src="img/apple-touch-icon.png" alt="" /><span>AI Future<small>FTC Team #31591</small></span></a>
@@ -28,14 +29,14 @@
 		</div>
 	</header>
 
-	<div class="wrap">
+	<main class="wrap" id="main-content" tabindex="-1">
 		<div class="hero">
 			<p class="kicker">Design · BIOBUZZ 2026–27</p>
 			<h1>Our robot</h1>
 			<p class="lead">We design the whole robot in CAD (Onshape) and make most of its parts ourselves: plywood plates on a laser cutter and custom pieces on 3D printers. This page shows where the robot is today, end of October.</p>
 		</div>
 
-		<main>
+		<div class="page-content">
 			<section class="card accent" id="overview" aria-labelledby="overview-title">
 				<h2 id="overview-title">The robot right now</h2>
 				<p>The robot picks up two ball sizes, sorts them, and shoots each one with its own shooter. Both shooters sit at the back and shoot <b>forward, over the intake</b>: the Pollen shooter low and centre-left, the Nectar shooter high on the right. Each ball stays at the height it already has, so the two paths never cross.</p>
@@ -43,7 +44,7 @@
 					<img src="img/robot/shooters-on-robot.webp" width="1400" height="1050" alt="CAD layout views of the whole robot from the top, side and front: green pollen shooter low on the left, orange nectar shooter high on the right, intake rollers at the front" decoding="async" />
 					<figcaption>CAD layout from Oct 27 (<a href="notebook.html#en-44">EN-44</a>): both shooters placed on the drivetrain with the intake. In CAD nothing clashes, the ball flight paths are clear, and it fits the 18 in box (top of the robot at 438 of 457 mm).</figcaption>
 				</figure>
-				<div class="table-wrap">
+				<div class="table-wrap" tabindex="0" role="region" aria-label="Robot subsystem status">
 					<table>
 						<thead><tr><th>Part</th><th>What it is now</th><th>Status</th></tr></thead>
 						<tbody>
@@ -119,8 +120,8 @@
 				<h3 style="margin-top:16px;">Shooter hood angle</h3>
 				<p>A servo turns a small gear that moves each shooter's hood between <b>20° and 55°</b>, so we can change how high and far the ball goes. On the nectar shooter, hard stops keep the hood from moving past either end. <a href="notebook.html#en-39">EN-39</a> · <a href="notebook.html#en-41">EN-41</a></p>
 			</section>
-		</main>
-	</div>
+		</div>
+	</main>
 
 	<footer>
 		<div class="wrap">
