@@ -4,11 +4,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Engineering Notebook · AI Future · FTC Team #31591</title>
-	<meta name="description" content="AI Future's BIOBUZZ engineering notebook: five design stories and all 44 entries, with the numbers, the options we compared and what we built." />
+	<meta name="description" content="AI Future's BIOBUZZ engineering notebook: five design stories and all 83 entries, with the numbers, the options we compared and what we built." />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="AI Future · FTC Team #31591" />
 	<meta property="og:title" content="Engineering Notebook · AI Future #31591" />
-	<meta property="og:description" content="Five design stories and 44 notebook entries from our BIOBUZZ robot build." />
+	<meta property="og:description" content="Five design stories and 83 notebook entries from our BIOBUZZ robot build." />
 	<meta property="og:url" content="https://gio1880.github.io/ai-future-ftc-website/notebook.html" />
 	<meta property="og:image" content="https://gio1880.github.io/ai-future-ftc-website/img/share-preview.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +32,7 @@
 		<div class="hero">
 			<p class="kicker">Think · BIOBUZZ 2026–27</p>
 			<h1>Engineering Notebook</h1>
-			<p class="lead">Every time we fix or design something on the robot, we write it up. We have written <b>44 entries</b> since September 24. Below are the five big stories they tell, then the full list.</p>
+			<p class="lead">Every time we fix or design something on the robot, we write it up. We have written <b>83 entries</b> from September 24 through November 6. Below are the five big stories they tell, then the full list.</p>
 			<div class="story-nav" aria-label="Stories">
 				<a href="#story-intake">A · Intake + sorter</a>
 				<a href="#story-pollen">B · Pollen shooter</a>
@@ -72,7 +72,7 @@
 					<li><b>Sort by size (Oct 18–20).</b> We built a separate 5-inch bench rig with a curved ramp and a <b>78 mm</b> tall slot in the back wall. Pollen fits through with <b>7 mm</b> to spare. Nectar is <b>13 mm</b> too big, so it has to go over the wall.</li>
 					<li><b>The math found a weak spot.</b> Pollen only flew into the slot in a narrow speed band (about <b>0.78–0.84 m/s</b>). So we cut the ramp lower (at 45°) and started the slot right where the ramp ends.</li>
 					<li><b>First bench test (Oct 21):</b> Nectar got stuck on the lip at the top of the slot. We added a grippy strip to that lip.</li>
-					<li><b>Second bench test (Oct 21):</b> Pollen went into the slot <b>5 out of 5</b> times, in about half a second. Nectar got past the slot <b>6 out of 6</b> times. But with only roller 1 powered, Nectar went over the wall <b>0 out of 6</b> times: it parked at roller 2. Some tubing also pulled out of the caps within 2 minutes.</li>
+					<li><b>Second bench test (Oct 21):</b> Pollen went into the slot <b>5 out of 5</b> times, in about half a second. Nectar reached roller 2 <b>6 out of 6</b> times. But with only roller 1 powered, Nectar went over the wall <b>0 out of 6</b> times: it parked at roller 2. With roller 2 turned by hand, Nectar went over the wall <b>4 out of 4</b> times. Some tubing also pulled out of the caps within 2 minutes.</li>
 					<li><b>Another idea we drew (Oct 20):</b> a "wedge" that turns every ball sideways and a bar that only Pollen fits under. It is in CAD with test-kit files, but not tested.</li>
 				</ul>
 
@@ -100,8 +100,11 @@
 					</figure>
 				</div>
 
-				<p class="status"><b>Status:</b> the bench kit is <span class="pill built">built and tested</span> (numbers above). The wide intake on the chassis is <span class="pill">CAD only</span>: the print and laser files are made, but it isn't built yet. Next: power roller 2, keep the tubing from pulling out, and run a counted speed test with a side camera.</p>
+				<p class="status"><b>Status:</b> the bench kit is <span class="pill built">built and tested</span> (numbers above). The Oct 22 wide-intake layout was <span class="pill">CAD only</span>. At that stage we planned to power roller 2, secure the tubing and time the intake with a side camera.</p>
 				<p class="lesson"><b>Lesson learned:</b> a quick bench mock-up with real balls showed us a problem (Nectar stuck on the lip) that a cheap grip strip fixed in one afternoon.</p>
+				<h4>From bench sorter to flower pickup</h4>
+				<p>We kept the front tubing roller for floor pickup and added a wedge to lift Pollen from the flower. The first linkage was too long when extended. We replaced it with one full-width wedge on two short arms. It starts folded in, lowers for pickup, then moves to a separate travel and shooting position. The start position blocks the highest shot in the model. Flower fit, servo load and counted retrieval runs are pending. <a href="#en-72">EN-72</a> · <a href="#en-83">EN-83</a></p>
+				<figure class="big-figure"><img src="img/notebook/intake/compact-flower-wedge.webp" width="1400" height="1000" alt="Side view of the EN-72 candidate showing the compact wedge deployed, raised for shooting and folded into the starting box" loading="lazy" decoding="async" /><figcaption>EN-72 candidate · CAD side view of the three wedge positions.</figcaption></figure>
 			</section>
 
 			<!-- Story B -->
@@ -165,6 +168,8 @@
 
 				<p class="status"><b>Status:</b> the team <span class="pill test">built and bench-tested</span> the v4 shooter on Oct 26. It "worked great" and was easy to put together. We haven't measured shot distance or height yet. The speed-control code is ready but not tested on the robot (<a href="robot.html#control">Control</a>).</p>
 				<p class="lesson"><b>Lesson learned:</b> design a straight screwdriver path to every motor screw. Reaching the gearbox screws with an L-key between the walls was the hardest part of the build.</p>
+				<h4>Shooter B · smaller gear, finer hood adjustment</h4>
+				<p>We brought back the stiffer hood and fixed comb, then traded the 30-tooth gear for a 26-tooth gear. The gear ratio went from 5.87:1 to 6.77:1. The servo now turns 236.9° in CAD to move the hood through 35°, compared with about 205° before. In older footage all three shots we could follow bounced out, and a ball rolling back toward the robot suggested backspin. We plan to try lower wheel speed and a higher hood angle. Gear fit, shot counts and speed recovery are pending. <a href="#en-74">EN-74</a></p>
 			</section>
 
 			<!-- Story C -->
@@ -208,8 +213,10 @@
 					</figure>
 				</div>
 
-				<p class="status"><b>Status:</b> <span class="pill">CAD only</span>. The nectar shooter v1 is designed and its print files are made, but it isn't printed or tested yet. Next: print it, check the servo can move the bigger hood, and test shots at 20°, 30° and 40°.</p>
+				<p class="status"><b>Status:</b> <span class="pill">CAD only</span>. The nectar shooter v1 is designed and its print files are made, but it was held at the design stage.</p>
 				<p class="lesson"><b>Lesson learned:</b> starting from a design that already works (pollen v4) and fixing its one hard part was faster than patching the old nectar design.</p>
+				<h4>Why Nectar is on hold</h4>
+				<p>We checked whether the larger ball could be driven all the way into the shooter and had no accepted replacement feed design. We chose Pollen only for the qualifier build while we work through the Nectar feed. <a href="#en-57">EN-57</a> · <a href="#en-59">EN-59</a></p>
 			</section>
 
 			<!-- Story D -->
@@ -252,8 +259,11 @@
 					</figure>
 				</div>
 
-				<p class="status"><b>Status:</b> the drivetrain-only chassis is <span class="pill test">built, testing</span>; we drilled its plates by hand. The rear cross panel and new inner plates are <span class="pill">CAD only</span> with laser files ready, not cut yet. We don't have drive test numbers yet.</p>
+				<p class="status"><b>Status:</b> the early drivetrain-only chassis was <span class="pill test">built, testing</span>; we drilled its plates by hand. The rear cross panel and new inner plates are <span class="pill">CAD only</span> with laser files ready, not cut yet. We don't have drive test numbers yet.</p>
 				<p class="lesson"><b>Lesson learned:</b> measure the real parts. One wrong guess (the sprocket length) changed every spacer in the wheel stack.</p>
+				<h4>Short screws and captive nuts</h4>
+				<p>Eight 3½ in bolts used to span the drive ties. We replaced them with 16 short screws, each with its own lock nut held in a printed pocket. We thickened thin spots around the pockets and kept the plywood hole centers. In CAD we checked 52 nut insertion paths on loose prints and found 17 screw heads that need to be reached before nearby parts go on. Nut fit, driver access and strength on the real parts are pending. <a href="#en-83">EN-83</a></p>
+				<figure class="big-figure"><img src="img/notebook/drive/captive-nut-section.webp" width="1400" height="467" alt="Section through a front drive tie showing one short screw and captive nut at each plywood side plate" loading="lazy" decoding="async" /><figcaption>EN-83 trial · CAD cross-section through a front drive tie.</figcaption></figure>
 			</section>
 
 			<!-- Story E -->
@@ -358,6 +368,45 @@
 							<tr id="en-42"><td class="id">EN-42</td><td>Oct 26</td><td>Bearings</td><td>Printed sleeve to fit a small bearing in a 12 mm hole</td><td><span class="pill">Files ready</span></td><td><a href="#story-inhouse">E</a></td></tr>
 							<tr id="en-43"><td class="id">EN-43</td><td>Oct 26</td><td>Control</td><td>Shooter speed control with live graphs</td><td><span class="pill">Code ready, not tested</span></td><td><a href="robot.html#control">Control</a></td></tr>
 							<tr id="en-44"><td class="id">EN-44</td><td>Oct 27</td><td>Whole robot</td><td>Where the two shooters go on the robot</td><td><span class="pill">CAD only</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-45"><td class="id">EN-45</td><td>Oct 29</td><td>Pollen shooter</td><td>We added a mount and a powered feeder for the pollen shooter.</td><td><span class="pill">CAD checked</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-46"><td class="id">EN-46</td><td>Oct 31</td><td>Robot layout</td><td>We found a pinch at the pollen entry and hard parts too close to the floor.</td><td><span class="pill">CAD study</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-47"><td class="id">EN-47</td><td>Oct 31</td><td>Pollen feed</td><td>We proposed keeping the ball under power as it moves into the shooter.</td><td><span class="pill">CAD proposal</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-48"><td class="id">EN-48</td><td>Oct 31</td><td>Pollen feed</td><td>We drew an earlier drop into the flywheel using the same mounting holes.</td><td><span class="pill">Trial print file</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-49"><td class="id">EN-49</td><td>Nov 1</td><td>Shooter mounts</td><td>We tried shared supports to make room for both shooters.</td><td><span class="pill">CAD study</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-50"><td class="id">EN-50</td><td>Nov 1</td><td>Pollen feed</td><td>We moved the shared deck while keeping the powered feeder.</td><td><span class="pill">CAD study</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-51"><td class="id">EN-51</td><td>Nov 1</td><td>Frame and intake</td><td>We checked how the intake and Nectar route fit around a shared rear frame.</td><td><span class="pill">CAD study</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-52"><td class="id">EN-52</td><td>Nov 1</td><td>Intake</td><td>We laid out both ball routes and joined the front supports.</td><td><span class="pill">CAD design</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-53"><td class="id">EN-53</td><td>Nov 1</td><td>Intake</td><td>We shared the roller supports and moved the drive outside the rollers.</td><td><span class="pill">CAD design</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-54"><td class="id">EN-54</td><td>Nov 1</td><td>Electronics</td><td>We drew a carrier for the hubs and a way to hold the battery in place.</td><td><span class="pill">CAD study</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-55"><td class="id">EN-55</td><td>Nov 1</td><td>Electronics</td><td>We checked room for the hubs, battery and their fasteners.</td><td><span class="pill">CAD review</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-56"><td class="id">EN-56</td><td>Nov 1</td><td>Frame</td><td>We flattened the front arch for laser cutting and prepared electronics fit pieces.</td><td><span class="pill">Prototype files</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-57"><td class="id">EN-57</td><td>Nov 1</td><td>Nectar feed</td><td>We checked whether the larger ball could stay under power into the shooter.</td><td><span class="pill">Open study</span></td><td><a href="#story-nectar">C</a></td></tr>
+							<tr id="en-58"><td class="id">EN-58</td><td>Nov 1</td><td>Front frame</td><td>We made room for two outward-facing front servos.</td><td><span class="pill">CAD design</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-59"><td class="id">EN-59</td><td>Nov 1</td><td>Robot layout</td><td>We planned a Pollen-only qualifier build and kept Nectar for later.</td><td><span class="pill">Plan</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-60"><td class="id">EN-60</td><td>Nov 2</td><td>Pollen shooter</td><td>The hood jerked during shots, so we stiffened it and supported the servo drive.</td><td><span class="pill">CAD prototype</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-61"><td class="id">EN-61</td><td>Nov 2</td><td>Drive and sensing</td><td>We designed drive pod end ties and room for two tracking wheels.</td><td><span class="pill">CAD prototype</span></td><td><a href="#story-drive">D</a></td></tr>
+							<tr id="en-62"><td class="id">EN-62</td><td>Nov 2</td><td>Robot layout</td><td>We reviewed the drive, intake and shooter together in the Pollen-only layout.</td><td><span class="pill">CAD review</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-63"><td class="id">EN-63</td><td>Nov 2</td><td>Flower retrieval</td><td>We studied video of a wedge that lifts Pollen from the flower.</td><td><span class="pill">Video study</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-64"><td class="id">EN-64</td><td>Nov 2</td><td>Pollen shooter</td><td>We planned the final hood, bearings and servo drive changes.</td><td><span class="pill">Plan</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-65"><td class="id">EN-65</td><td>Nov 2</td><td>Drivetrain</td><td>We found nuts on the drive-pod bridges that a tool could not reach.</td><td><span class="pill">Plan</span></td><td><a href="#story-drive">D</a></td></tr>
+							<tr id="en-66"><td class="id">EN-66</td><td>Nov 2</td><td>Intake</td><td>We planned a front guard and reviewed the roller tubing.</td><td><span class="pill">Plan</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-67"><td class="id">EN-67</td><td>Nov 2</td><td>Flower retrieval</td><td>We rejected a wedge position that did not fit the rest of the robot.</td><td><span class="pill">CAD review</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-68"><td class="id">EN-68</td><td>Nov 2</td><td>Frame and electronics</td><td>We combined plywood side plates and checked room for electronics.</td><td><span class="pill">CAD review</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-69"><td class="id">EN-69</td><td>Nov 2</td><td>Pollen shooter</td><td>We compared the hood at three angles and planned the next gear trial.</td><td><span class="pill">CAD review</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-70"><td class="id">EN-70</td><td>Nov 3</td><td>Hardware</td><td>We gathered supplier models to check real part sizes in CAD.</td><td><span class="pill">Reference models</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-71"><td class="id">EN-71</td><td>Nov 3</td><td>Robot layout</td><td>We replaced approximations with supplier hardware models and checked joints.</td><td><span class="pill">CAD review</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-72"><td class="id">EN-72</td><td>Nov 3</td><td>Flower retrieval</td><td>We replaced long linkages with a full-width wedge on two short arms.</td><td><span class="pill">CAD candidate</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-73"><td class="id">EN-73</td><td>Nov 3</td><td>Pollen shooter</td><td>We put the shooter deck on side rails and blended the new feed ramp into its entry.</td><td><span class="pill">CAD candidate</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-74"><td class="id">EN-74</td><td>Nov 3–4</td><td>Pollen shooter</td><td>We chose a 26-tooth hood gear and reviewed three shots that bounced out.</td><td><span class="pill">CAD and footage</span></td><td><a href="#story-pollen">B</a></td></tr>
+							<tr id="en-75"><td class="id">EN-75</td><td>Nov 4</td><td>Robot layout</td><td>We revised the battery mount, side plates and number signs.</td><td><span class="pill">CAD revision</span></td><td><a href="robot.html#overview">Robot</a></td></tr>
+							<tr id="en-76"><td class="id">EN-76</td><td>Nov 4</td><td>Front frame</td><td>We added guard brackets and revised the side plates and bearing holders.</td><td><span class="pill">CAD revision</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-77"><td class="id">EN-77</td><td>Nov 4</td><td>Frame and electronics</td><td>We switched to corner brackets and revised the switch and hub mounts.</td><td><span class="pill">CAD revision</span></td><td><a href="#story-inhouse">E</a></td></tr>
+							<tr id="en-78"><td class="id">EN-78</td><td>Nov 4</td><td>Intake</td><td>We shortened the first roller and laid out the motor and chain.</td><td><span class="pill">CAD revision</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-79"><td class="id">EN-79</td><td>Nov 5</td><td>Intake and frame</td><td>We moved the transfer guides onto intake panels and simplified nearby brackets.</td><td><span class="pill">CAD revision</span></td><td><a href="#story-intake">A</a></td></tr>
+							<tr id="en-80"><td class="id">EN-80</td><td>Nov 5</td><td>Drivetrain</td><td>We replaced pod-end corner brackets with flush ties.</td><td><span class="pill">CAD revision</span></td><td><a href="#story-drive">D</a></td></tr>
+							<tr id="en-81"><td class="id">EN-81</td><td>Nov 5</td><td>Drive and electronics</td><td>We removed wood end plates, added a high front tie and recessed the switch.</td><td><span class="pill">CAD checked</span></td><td><a href="#story-drive">D</a></td></tr>
+							<tr id="en-82"><td class="id">EN-82</td><td>Nov 6</td><td>Evidence and control</td><td>We separated historical measurements, current CAD checks and active drive code.</td><td><span class="pill">Poster evidence audit</span></td><td><a href="robot.html#control">Control</a></td></tr>
+							<tr id="en-83"><td class="id">EN-83</td><td>Nov 6</td><td>Drivetrain</td><td>We replaced long tie bolts with short screws and captive lock nuts.</td><td><span class="pill">CAD checked</span></td><td><a href="#story-drive">D</a></td></tr>
 						</tbody>
 					</table>
 				</div>

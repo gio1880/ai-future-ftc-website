@@ -7,7 +7,7 @@ Plain HTML and CSS, published with GitHub Pages from the `main` branch.
 |---|---|
 | `index.html` | Home: this season so far, next event, links for judges |
 | `robot.html` | Design + Control: the robot right now, how we build in-house, how we control it |
-| `notebook.html` | Think award: the 5 design stories and the full EN-01..EN-44 index |
+| `notebook.html` | Think award: the 5 design stories and the full EN-01..EN-83 index |
 | `assets/site.css` | Shared look, also used for the FLL team site |
 
 Photos go in `img/` as compressed `.webp` files (about 1400 px on the long side), with `loading="lazy"` and alt text.
@@ -18,4 +18,4 @@ Photos go in `img/` as compressed `.webp` files (about 1400 px on the long side)
 | `img/robot/` | Robot page pictures |
 | `img/build/` | Last season's team photos (not shown on any page: no guardian consent for faces yet) |
 
-No student names or faces on public pages. Only parts, CAD, the robot and whiteboards.
+Use first names only for the consented FTC roster. Only show parts, CAD, the robot and whiteboards.
