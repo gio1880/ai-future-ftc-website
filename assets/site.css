@@ -58,6 +58,8 @@ a.btn.plain{ background:#fff; border:1px solid rgba(11,18,32,.14); }
 .award .tag{ align-self:flex-start; font-size:12px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; background:var(--blue); color:#fff; padding:4px 10px; border-radius:999px; margin-bottom:10px; }
 .award .tag.soon{ background:#fff; color:var(--muted); border:1px solid var(--line); }
 .award a.btn{ margin-top:auto; align-self:flex-start; }
+.award .btns{ margin-top:auto; }
+.award .btns a.btn{ margin-top:10px; }
 
 /* Event strip */
 .event{ display:flex; gap:14px; align-items:center; margin-top:14px; padding:12px 14px; border-radius:12px; background:var(--blue); color:#fff; }
@@ -123,4 +125,51 @@ footer .wrap{ display:flex; justify-content:space-between; gap:12px; flex-wrap:w
 @media (max-width:760px){
 	.stats{ grid-template-columns:1fr; }
 	.strip{ grid-template-columns:1fr; }
+}
+
+/* Notebook entry lists (one line per EN entry) */
+.pill.no{ background:#f1f1f1; color:rgba(11,18,32,.55); }
+ol.entries{ list-style:none; padding:0; margin:12px 0 0; }
+ol.entries li{ display:grid; grid-template-columns:64px 1fr auto; grid-template-areas:"id meta pill" "id text text"; gap:2px 12px; padding:10px 0; border-top:1px solid var(--line); scroll-margin-top:12px; }
+ol.entries li:target{ background:#fff8d6; border-radius:8px; }
+.en-id{ grid-area:id; font-weight:800; color:var(--blue); white-space:nowrap; }
+.en-meta{ grid-area:meta; font-size:13px; color:var(--muted); }
+.en-text{ grid-area:text; }
+ol.entries .pill{ grid-area:pill; align-self:start; }
+.era{ display:inline-block; font-size:11px; font-weight:700; padding:1px 7px; border-radius:999px; white-space:nowrap; }
+.era-w{ background:#efe3cf; color:#5b3d12; }
+.era-c{ background:#e4defa; color:#3b2a86; }
+.era-v{ background:#d9efe6; color:#0f5135; }
+.era-m{ background:#dde5ee; color:#1d3550; }
+.back{ font-size:13px; margin-top:10px !important; }
+.story-nav .muted{ font-weight:500; }
+
+/* Versions page */
+.timeline{ list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+.timeline a{ display:block; background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 12px; text-decoration:none; color:var(--ink); }
+.timeline a b{ display:block; color:var(--blue); }
+.timeline a span{ font-size:13px; color:var(--muted); }
+.era-card{ border-left:6px solid #d8c7a8; }
+.era-card.era-c{ border-left-color:#8c7ad6; background:var(--card); }
+.era-card.era-v{ border-left-color:#3d9a73; background:var(--card); }
+.era-card.era-m{ border-left-color:#6f8aa8; background:var(--card); }
+.era-card.era-w{ background:var(--card); }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.chips a{ font-size:13px; font-weight:700; text-decoration:none; background:#fff; border:1px solid var(--line); border-radius:8px; padding:3px 8px; }
+
+/* Season story */
+.decision{ display:grid; grid-template-columns:110px 1fr; gap:16px; }
+.decision .when{ font-weight:800; color:var(--blue); }
+.decision .when small{ display:block; font-weight:600; color:var(--muted); font-size:13px; }
+.decision dl{ margin:8px 0 0; display:grid; grid-template-columns:auto 1fr; gap:4px 12px; }
+.decision dt{ font-weight:700; }
+.decision dd{ margin:0; }
+
+@media (max-width:760px){
+	.timeline{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+	ol.entries li{ grid-template-columns:auto 1fr; grid-template-areas:"id meta" "text text" "pill pill"; }
+	ol.entries .pill{ justify-self:start; margin-top:4px; }
+	.decision{ grid-template-columns:1fr; gap:4px; }
+	.decision dl{ grid-template-columns:1fr; }
+	.decision dt{ margin-top:6px; }
 }

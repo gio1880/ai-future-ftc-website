@@ -4,11 +4,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Robot · AI Future · FTC Team #31591</title>
-	<meta name="description" content="How AI Future's BIOBUZZ robot works: drivetrain, intake and sorter, pollen and nectar shooters, how we build it in-house and how we control it." />
+	<meta name="description" content="AI Future's BIOBUZZ robot now: CR1 v6, a Pollen robot with a topspin shooter on a turret, a 4-ball lane, a flower wedge and aluminum side plates. How we build it in-house and how we control it." />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="AI Future · FTC Team #31591" />
 	<meta property="og:title" content="Our BIOBUZZ robot · AI Future #31591" />
-	<meta property="og:description" content="Where our robot is now, how we build it from plywood and PLA, and how we control it." />
+	<meta property="og:description" content="CR1 v6: topspin shooter on a turret, 4-ball lane, flower wedge. How we build it and how we control it." />
 	<meta property="og:url" content="https://gio1880.github.io/ai-future-ftc-website/robot.html" />
 	<meta property="og:image" content="https://gio1880.github.io/ai-future-ftc-website/img/share-preview.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
@@ -23,70 +23,110 @@
 			<nav aria-label="Main">
 				<a href="index.html">Home</a>
 				<a href="robot.html" aria-current="page">Robot</a>
-				<a href="notebook.html">Engineering Notebook</a>
+				<a href="season-story.html">Season story</a>
+				<a href="versions.html">Versions</a>
+				<a href="notebook.html">Notebook</a>
 			</nav>
 		</div>
 	</header>
 
 	<div class="wrap">
 		<div class="hero">
-			<p class="kicker">Design · BIOBUZZ 2026–27</p>
-			<h1>Our robot</h1>
-			<p class="lead">We design the whole robot in CAD (Onshape) and make most of its parts ourselves: plywood plates on a laser cutter and custom pieces on 3D printers. This page shows where the robot is today, end of October.</p>
+			<p class="kicker">Design · BIOBUZZ 2026–27 · Updated Nov 20</p>
+			<h1>Our robot: CR1 v6</h1>
+			<p class="lead">We design the whole robot in CAD and make most of it ourselves: plywood and aluminum plates on a laser cutter, and custom parts on 3D printers. This page shows the robot we are building for the qualifier on December 20.</p>
+			<div class="badges">
+				<div class="badge">Scores Pollen</div>
+				<div class="badge">Topspin shooter on a turret</div>
+				<div class="badge">443 × 453 × 357 mm (18 in = 457 mm)</div>
+			</div>
 		</div>
 
 		<main>
 			<section class="card accent" id="overview" aria-labelledby="overview-title">
-				<h2 id="overview-title">The robot right now</h2>
-				<p>The robot picks up two ball sizes, sorts them, and shoots each one with its own shooter. Both shooters sit at the back and shoot <b>forward, over the intake</b>: the Pollen shooter low and centre-left, the Nectar shooter high on the right. Each ball stays at the height it already has, so the two paths never cross.</p>
+				<h2 id="overview-title">How it works</h2>
+				<p>A roller at the front picks Pollen off the floor. The ball waits in a <b>4-ball lane</b> down the middle of the robot. A pair of wheels squeezes it up into the <b>shooter head</b>, where a spinning wheel on top launches it with <b>topspin</b>, so it rolls into the hive instead of bouncing out. The head sits on a <b>turret</b> that turns ±90°, with a <b>camera</b> on top to aim. A <b>wedge</b> at the front slides under Pollen in the flower so it rolls out to the intake.</p>
 				<figure class="big-figure">
-					<img src="img/robot/shooters-on-robot.webp" width="1400" height="1050" alt="CAD layout views of the whole robot from the top, side and front: green pollen shooter low on the left, orange nectar shooter high on the right, intake rollers at the front" decoding="async" />
-					<figcaption>CAD layout from Oct 27 (<a href="notebook.html#en-44">EN-44</a>): both shooters placed on the drivetrain with the intake. In CAD nothing clashes, the ball flight paths are clear, and it fits the 18 in box (top of the robot at 438 of 457 mm).</figcaption>
+					<img src="img/robot/cr1-v6-robot.webp" width="1400" height="1312" alt="Four CAD views of CR1 v6: front-left, rear-right, top and left side. Green wedge on two arms at the front, purple shooter head with a green flywheel on a turret, plywood side plates and black robot signs" decoding="async" />
+					<figcaption>CR1 v6 in CAD, Nov 17 (<a href="notebook.html#en-108">EN-108</a>). Since then the side plates went to aluminum, the lane became two prints, and the camera moved to the top of the head (below).</figcaption>
 				</figure>
 				<div class="table-wrap">
 					<table>
 						<thead><tr><th>Part</th><th>What it is now</th><th>Status</th></tr></thead>
 						<tbody>
-							<tr><td><b>Drivetrain</b></td><td>Two chain-driven pods with goBILDA motors and 104 mm wheels. A plywood rear cross panel is designed because our metal U-channel is 10 mm too short. <a href="notebook.html#story-drive">Story D</a></td><td><span class="pill test">Built, testing</span></td></tr>
-							<tr><td><b>Intake + sorter</b></td><td>A wide tubing roller (345 mm, wheel to wheel) at the front. Pollen goes through a 78 mm slot in the wall, Nectar goes over the top. Robot 17.89 in long. <a href="notebook.html#en-38">EN-38</a></td><td><span class="pill">CAD + files ready</span><br /><span class="muted" style="font-size:13px;">bench kit tested</span></td></tr>
-							<tr><td><b>Pollen shooter v4</b></td><td>One-piece printed side walls with the motor bracket, a geared hood moved by a servo (20–55°), and a right-angle gearbox on the motor. Sits on a plywood platform. <a href="notebook.html#en-39">EN-39</a></td><td><span class="pill test">Built, bench tested</span></td></tr>
-							<tr><td><b>Nectar shooter v1</b></td><td>Same idea as pollen v4, sized for the bigger ball (hood radius 135.44 mm), with thicker gears and straight screwdriver holes. <a href="notebook.html#en-41">EN-41</a></td><td><span class="pill">CAD only</span></td></tr>
-							<tr><td><b>Shooters on the robot</b></td><td>Pollen shaft 132 mm off the field, Nectar shaft 303 mm. Still to design: the nectar tray behind the wall, the guides under each wheel, and the mounts. <a href="notebook.html#en-44">EN-44</a></td><td><span class="pill">CAD layout only</span></td></tr>
+							<tr><td><b>Drivetrain</b></td><td>Two pods, each with 2 goBILDA motors, chain drive and 104 mm mecanum wheels. Full-length side plates; the main plates in 1/8 in aluminum. <a href="notebook.html#en-107">EN-107</a> · <a href="notebook.html#en-108">EN-108</a> · <a href="notebook.html#en-111">EN-111</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Intake + lane</b></td><td>A tubing roller touches every ball first. A plate keeps Nectar out. The lane is two 3D prints and holds 4 balls, with 3 small wheels so a ball never sits still. <a href="notebook.html#en-112">EN-112</a> · <a href="notebook.html#en-113">EN-113</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Transfer</b></td><td>A front and a back wheel squeeze the ball up into the head, on one motor with one chain. <a href="notebook.html#en-105">EN-105</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Shooter head</b></td><td>One printed piece. Flywheel on top, grippy 55° ramp under the ball, motor tucked behind and under the wheel. A servo gate holds the ball until we fire. <a href="notebook.html#en-102">EN-102</a> · <a href="notebook.html#en-103">EN-103</a> · <a href="notebook.html#en-114">EN-114</a></td><td><span class="pill test">Rig shot well</span><br /><span class="muted" style="font-size:13px;">final print not made</span></td></tr>
+							<tr><td><b>Turret + camera</b></td><td>A 6 in lazy susan turned by 2 REV servos, ±90°. A webcam on a mast on top of the head. <a href="notebook.html#en-104">EN-104</a> · <a href="notebook.html#en-114">EN-114</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Flower wedge</b></td><td>A full-width wedge on two short arms outside the pods, moved by a servo. Three low shapes to test on the real flower. <a href="notebook.html#en-100">EN-100</a> · <a href="notebook.html#en-115">EN-115</a></td><td><span class="pill">Test slices ready</span></td></tr>
+							<tr><td><b>Electronics</b></td><td>Control Hub and Expansion Hub inside the pods, a recessed power switch, the Pinpoint odometry sensor flat on a printed shelf. <a href="notebook.html#en-99">EN-99</a> · <a href="notebook.html#en-110">EN-110</a></td><td><span class="pill">Files ready</span></td></tr>
 						</tbody>
 					</table>
 				</div>
+				<p class="status"><b>Honest status:</b> CR1 v6 is fully designed and checked in CAD (no parts clash, the ball path is clear, it fits the 18 in box). It is <b>not built yet</b>. The topspin head was tried on a bench rig and shot much more consistently than our old hood shooter. Next: cut, print, build, then test with counts. <a href="season-story.html#next-title">What's next</a></p>
+			</section>
+
+			<section class="card" id="parts" aria-labelledby="parts-title">
+				<h2 id="parts-title">Closer looks</h2>
+				<div class="strip">
+					<figure>
+						<img src="img/robot/head-v4.webp" width="1400" height="1312" alt="CAD of the purple one-piece shooter head with a green flywheel, a black chain on the side and an orange camera mast on top" loading="lazy" decoding="async" />
+						<figcaption><b>Shooter head v4 · Nov 20</b>
+							<ul><li>One print instead of 9 parts</li><li>Camera on top: the wedge never blocks it</li></ul>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/robot/lane-wheels.webp" width="1400" height="1312" alt="CAD of the printed transfer lane in two colors with three small extra wheels and their red chains" loading="lazy" decoding="async" />
+						<figcaption><b>Printed lane · Nov 19</b>
+							<ul><li>2 prints instead of 7 parts</li><li>3 lane wheels close a 200 mm dead zone</li></ul>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/versions/v6-metal-plates.webp" width="1400" height="1050" alt="Flat drawings of the robot's plates in aluminum, with the 7 sponsor plates labeled in green" loading="lazy" decoding="async" />
+						<figcaption><b>Aluminum plates · Nov 19</b>
+							<ul><li>7 plates from a sponsor credit</li><li>No other part moves</li></ul>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/robot/wedge-low-slices.webp" width="1080" height="990" alt="Side profiles of three low wedge test slices compared with the ball and the flower collar" loading="lazy" decoding="async" />
+						<figcaption><b>Low wedge slices · Nov 20</b>
+							<ul><li>3 shapes to print and test</li><li>Measure the flower first</li></ul>
+						</figcaption>
+					</figure>
+				</div>
+				<p class="muted" style="margin-top:12px;">How we got here, version by version: <a href="versions.html">wood robot → CR1 → CR1 v6 → v6 METAL</a>.</p>
 			</section>
 
 			<section class="card" id="build" aria-labelledby="build-title">
 				<h2 id="build-title">How we build in-house</h2>
 				<div class="grid">
 					<div>
-						<h3>Laser cutter</h3>
+						<h3>Laser cutters</h3>
 						<ul class="clean">
-							<li><b>1/4 in (6.35 mm) plywood</b> for plates, walls and panels.</li>
-							<li>The bed is <b>305 × 381 mm</b>, smaller than our side plates. We split big plates with seams that step around bolt holes and add a splice bracket on every seam. <a href="notebook.html#en-01">EN-01</a></li>
-							<li>We cut small test strips first (holes of 11.9, 12.0 and 12.1 mm) to find the best bearing fit. <a href="notebook.html#en-08">EN-08</a></li>
-							<li>Parts get engraved labels (FRONT, TOP) so they go on the right way.</li>
+							<li><b>1/4 in plywood</b> for plates and panels. Our Falcon A1 bed is <b>305 × 381 mm</b>, so early plates were split with seams that step around bolt holes. <a href="notebook.html#en-01">EN-01</a></li>
+							<li>The CR1 v6 side plates are longer, so we cut them whole on a bigger <b>Glowforge</b> (495 × 279 mm bed). <a href="notebook.html#en-107">EN-107</a></li>
+							<li>Plates are pocketed with straight struts between the holes we use, so they are light but strong. <a href="notebook.html#en-95">EN-95</a></li>
+							<li>The sponsor plates are cut in <b>1/8 in aluminum</b> from the same files. <a href="notebook.html#en-111">EN-111</a></li>
 						</ul>
 					</div>
 					<div>
 						<h3>3D printers</h3>
 						<ul class="clean">
-							<li><b>PLA</b> on a <b>Bambu A1</b> and <b>P1S</b>, both with a <b>256 mm</b> bed.</li>
-							<li>We design every print to fit that bed. The one-piece shooter walls are 245 mm (pollen) and 244 mm (nectar) long.</li>
-							<li>Long thin parts print on their side, so the layers run the long way and don't snap. <a href="notebook.html#en-09">EN-09</a></li>
-							<li>When a tall print failed, we split it in two with pegs. <a href="notebook.html#en-26">EN-26</a></li>
+							<li><b>PLA</b> on a <b>Bambu A1</b> and <b>P1S</b>, both with a <b>256 mm</b> bed. Every print is designed to fit it.</li>
+							<li>We print whole assemblies as one part when we can: the shooter head (9 parts to 1), the robot signs (16 to 1), the lane (7 to 2). <a href="notebook.html#en-102">EN-102</a> · <a href="notebook.html#en-106">EN-106</a> · <a href="notebook.html#en-112">EN-112</a></li>
+							<li>Before a big print we print small test coupons for hole and joint fit.</li>
 						</ul>
 					</div>
 				</div>
-				<h3 style="margin-top:16px;">One bolt size</h3>
-				<p>Every wood joint uses <b>#8-32</b> bolts in <b>4.5 mm</b> holes, with washers and nylon lock nuts. REV parts stay M3. Our screw length rule is <b>material + 9.2 mm</b> (two washers, the nut and one thread showing). We put all <b>287</b> bolts into the CAD so the clash check catches heads and nuts that hit other parts. <a href="notebook.html#en-03">EN-03</a> · <a href="notebook.html#en-13">EN-13</a></p>
+				<h3 style="margin-top:16px;">Fasteners</h3>
+				<p>Wood joints use <b>#8-32</b> bolts with lock nuts, and REV parts use M3. Plates join with printed corner brackets, not nuts hidden in plate edges. No bolt head or nut is allowed in a ball's path. <a href="notebook.html#en-03">EN-03</a> · <a href="notebook.html#en-77">EN-77</a></p>
 				<h3 style="margin-top:16px;">Every change follows the same steps</h3>
 				<ol class="steps">
 					<li><span><b>Change the model</b> in CAD.</span></li>
 					<li><span><b>Check for clashes,</b> so no two parts overlap, every screw can be reached, and the robot still fits inside 18 inches.</span></li>
-					<li><span><b>Export the files:</b> laser-cutting files for plywood, STL files for printing.</span></li>
-					<li><span><b>Make and fit the part,</b> then test it.</span></li>
+					<li><span><b>Test the risky part on a bench rig</b> before the whole robot.</span></li>
+					<li><span><b>Export the files:</b> laser files for plates, STL files for printing.</span></li>
 					<li><span><b>Write it up</b> in our <a href="notebook.html">engineering notebook</a>: the problem, the numbers, the options and the result.</span></li>
 				</ol>
 			</section>
@@ -98,26 +138,24 @@
 					<article>
 						<h3>Shooter speed control</h3>
 						<ul class="clean">
-							<li><b>Sensor:</b> an encoder on each shooter motor counts how fast the motor turns.</li>
-							<li><b>Problem:</b> with a fixed power, the wheel slows down when the battery runs low and when a ball goes through. Then shots land in different places.</li>
-							<li><b>How it works:</b> we give each shooter a target speed. Many times a second the Control Hub compares the real speed with the target and adds or takes away power (a PIDF loop: a base power for that speed, plus a correction that grows with the error).</li>
-							<li><b>Tuning:</b> FTC Dashboard draws live graphs of target vs real speed on a laptop, so we can change the numbers and watch the line. Our goal: get back within 5% of the target after each shot.</li>
-							<li><b>Status:</b> the code builds, but it hasn't run on the robot yet, so we have no tuned values or test numbers. <a href="notebook.html#en-43">EN-43</a></li>
+							<li><b>Sensor:</b> the encoder on the flywheel motor counts how fast it turns.</li>
+							<li><b>Problem:</b> with a fixed power, the wheel slows when the battery runs low and after each shot, so shots land in different places. Our study found that just 3% too fast or slow loses half of the distance range where we score.</li>
+							<li><b>How it works:</b> we set a target speed. Many times a second the Control Hub compares the real speed with the target and adds or takes away power (a PIDF loop). FTC Dashboard draws live graphs so we can tune it.</li>
+							<li><b>Status:</b> the code builds; tuning waits for the robot. <a href="notebook.html#en-43">EN-43</a> · <a href="notebook.html#en-90">EN-90</a></li>
 						</ul>
 					</article>
 					<article>
 						<h3>Knowing where the robot is</h3>
 						<ul class="clean">
-							<li><b>Sensors:</b> encoders on the four drive motors, and the gyro (IMU) built into the Control Hub.</li>
+							<li><b>Sensors:</b> the goBILDA Pinpoint odometry computer, the drive motor encoders and the gyro in the Control Hub.</li>
 							<li><b>Problem:</b> in autonomous nobody drives, so the robot has to know where it is on the field.</li>
-							<li><b>How it works:</b> our drive code (Road Runner) adds up how far each wheel turned to work out the robot's position, and the gyro tells it which way it is facing.</li>
-							<li><b>Also ready:</b> we have code for two extra position sensors (goBILDA Pinpoint and SparkFun OTOS), but they are not switched on yet.</li>
-							<li><b>Status:</b> no tuning results in our notebook yet for this season's robot.</li>
+							<li><b>How it works:</b> our drive code (Road Runner) adds up how far the robot moved and which way it faces.</li>
+							<li><b>Status:</b> the Pinpoint has a printed shelf on CR1 v6; no tuning results yet. <a href="notebook.html#en-99">EN-99</a></li>
 						</ul>
 					</article>
 				</div>
-				<h3 style="margin-top:16px;">Shooter hood angle</h3>
-				<p>A servo turns a small gear that moves each shooter's hood between <b>20° and 55°</b>, so we can change how high and far the ball goes. On the nectar shooter, hard stops keep the hood from moving past either end. <a href="notebook.html#en-39">EN-39</a> · <a href="notebook.html#en-41">EN-41</a></p>
+				<h3 style="margin-top:16px;">Aiming the turret</h3>
+				<p>Two REV servos turn the turret through printed gears, ±90°. The webcam on top of the head looks forward, 30° up, so it can see the field's tags. The plan is to use the camera to point the turret at the hive. This code is <b>not written yet</b>. <a href="notebook.html#en-103">EN-103</a> · <a href="notebook.html#en-114">EN-114</a></p>
 			</section>
 		</main>
 	</div>
@@ -125,7 +163,7 @@
 	<footer>
 		<div class="wrap">
 			<span>AI Future · FTC Team #31591 · Built by Team #31591 with help from Claude</span>
-			<span><a href="index.html">Home</a> · <a href="notebook.html">Engineering Notebook</a></span>
+			<span><a href="index.html">Home</a> · <a href="season-story.html">Season story</a> · <a href="notebook.html">Notebook</a></span>
 		</div>
 	</footer>
 </body>
