@@ -10,3 +10,5 @@ Read the last 20 lines before working. One line per step, newest at the bottom:
 2026-11-20 13:52 · Claude · website notebook section · Cloned repo to Desktop\FTC Website - BIOBUZZ; added AGENTS.md, CLAUDE.md, HANDOFF.md · build notebook pages
 2026-11-20 13:59 · Claude · website notebook section · New pages season-story.html (12 decisions), versions.html (4 eras), october-stories.html (old 5 stories moved); notebook.html = all 114 entries by subsystem (#en-NN kept); robot.html + home describe CR1 v6; 6 CAD renders added (webp, <75 KB each). Local check: 0 broken links/anchors, no sideways scroll at 375 px · push, check Pages
 2026-11-20 13:59 · Claude · website notebook section · No 00 SEASON STORY.md in the notebook yet, so entries were sorted by hand (subsystem + era per entry, generator kept out of the repo) · when the notebook session writes SEASON STORY / new index, compare season-story.html with it
+2026-11-20 14:00 · Claude · website notebook section · Pushed 9b9bcce; Pages built, all 6 pages live (200), 114 entries on the live notebook · Giovanny: decide on draft PRs #2/#3 (now conflict with main)
+RELEASED
