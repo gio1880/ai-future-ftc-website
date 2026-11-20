@@ -10,7 +10,11 @@ Codex reads this file directly; Claude Code reads it through `CLAUDE.md`. Put sh
   Giovanny's decisions are there).
 - Before editing, add `NOW: <agent> · <session>` at the bottom of HANDOFF.md; when you stop, add `RELEASED`.
   If the last NOW line has no RELEASED after it and is less than a day old, ask Giovanny before editing.
-- After each step add ONE line: `YYYY-MM-DD HH:MM · Claude|Codex · <session> · <what> · <next>`.
+- After each step add ONE line: `YYYY-MM-DD HH:MM · <Contributor> · <session> · <what> · <next>`.
+- **Contributor names (MAIN RULE):** four agents work here - `Claude@Main`, `Codex@Main` (main laptop, computer
+  `GIOVANNY`), `Claude@Center`, `Codex@Center` (center laptop, `Gio-Laptop`). Use YOUR name (agent + `$env:COMPUTERNAME`)
+  in every log line, NOW.md baton and handoff note, and start every commit message with `[<name>] `. A line from another
+  name is that agent's work: build on it, don't redo it. Full rule: `~/.claude/CLAUDE.md` / `~/.codex/AGENTS.md`.
 - Start a line with `DECISION:` for anything Giovanny decides in chat (even with no file change).
 - Commit messages: `site: <what>`. Push to `main` only after the local preview checks below pass.
   Big changes or experiments go on a branch + draft PR instead.

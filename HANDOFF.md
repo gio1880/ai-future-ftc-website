@@ -1,7 +1,7 @@
 # HANDOFF log - FTC website (Claude + Codex)
 
 Read the last 20 lines before working. One line per step, newest at the bottom:
-`YYYY-MM-DD HH:MM · Claude|Codex · <session> · <what> · <next>`
+`YYYY-MM-DD HH:MM · <Contributor> · <session> · <what> · <next>` - Contributor = Claude@Main, Codex@Main, Claude@Center or Codex@Center (see AGENTS.md)
 `DECISION: ...` for Giovanny's choices. `NOW: <agent> · <session>` while editing, `RELEASED` when done.
 
 2026-10-29 · Claude · claude/vibrant-ramanujan-mehetw (PR #1, merged) · Five notebook stories, robot status, season strip (EN-01..44) · -
