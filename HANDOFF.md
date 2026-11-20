@@ -12,3 +12,7 @@ Read the last 20 lines before working. One line per step, newest at the bottom:
 2026-11-20 13:59 · Claude · website notebook section · No 00 SEASON STORY.md in the notebook yet, so entries were sorted by hand (subsystem + era per entry, generator kept out of the repo) · when the notebook session writes SEASON STORY / new index, compare season-story.html with it
 2026-11-20 14:00 · Claude · website notebook section · Pushed 9b9bcce; Pages built, all 6 pages live (200), 114 entries on the live notebook · Giovanny: decide on draft PRs #2/#3 (now conflict with main)
 RELEASED
+
+NOW: Codex@Main · team domains
+2026-11-20 · Codex@Main · team domains · Configured FTC DNS, added Pages CNAME, canonical URLs and sitemap · verify HTTPS and Google setup
+RELEASED
