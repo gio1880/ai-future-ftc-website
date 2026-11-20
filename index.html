@@ -18,6 +18,23 @@
 	<link rel="icon" href="img/favicon.png" type="image/png" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 	<link rel="stylesheet" href="assets/site.css" />
+<script>
+  if (location.hostname === 'aifutureftc.nyc' && location.protocol === 'https:') {
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-TTWV8PSDSY';
+    document.head.append(tag);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-TTWV8PSDSY', {
+      page_location: location.origin + location.pathname,
+      page_referrer: '',
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+  }
+</script>
 </head>
 <body>
 	<header class="top">

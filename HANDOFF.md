@@ -16,3 +16,7 @@ RELEASED
 NOW: Codex@Main · team domains
 2026-11-20 · Codex@Main · team domains · Configured FTC DNS, added Pages CNAME, canonical URLs and sitemap · verify HTTPS and Google setup
 RELEASED
+
+NOW: Codex@Main · team domains
+2026-11-20 · Codex@Main · team domains · Verified FTC Search Console ownership and HTTPS certificate, enabled HTTPS and added FTC-specific GA4 page views · verify collection
+RELEASED
