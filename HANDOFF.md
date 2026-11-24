@@ -20,3 +20,10 @@ RELEASED
 NOW: Codex@Main · team domains
 2026-11-20 · Codex@Main · team domains · Verified FTC Search Console ownership and HTTPS certificate, enabled HTTPS and added FTC-specific GA4 page views · verify collection
 RELEASED
+
+NOW: Claude@Main · competitive redesign + sponsors
+2026-11-24 08:50 · Claude@Main · competitive redesign + sponsors · Dark competition look in new assets/ftc.css + assets/ftc.js (site.css untouched, FLL-safe); new home (hero, countdown to Dec 20, subsystems, timeline, sponsor wall) and new sponsors.html (Protocase, PCBWay, goBILDA, Parker's, Atomic, LI Screen Printing; wording from content/sponsorship/sponsor-status.md); Sponsors in every nav; notebook +EN-87, EN-116..121 (121 entries); robot/versions/season-story updated for the wood v6 build (EN-119..121) and closed-loop code (EN-117). Local check: 0 broken links/anchors, no console errors, no sideways scroll at 375 px · Giovanny: review draft PR, then merge
+2026-11-24 08:50 · Claude@Main · competitive redesign + sponsors · PCBWay, Parker's and Atomic show text wordmarks: their logo files are only in Gmail (PCBWay ZIP, Parker's PNG/SVG, white-on-dark only) · save them to command-center brand-assets, then swap in img/sponsors/
+RELEASED
+2026-11-24 09:05 · Claude@Main · competitive redesign + sponsors · Real logos for PCBWay + Parker's (from their Nov 23 emails) and Atomic (from atomicfilament.com header) replace the text wordmarks · Atomic: confirm logo permission with John
+RELEASED
