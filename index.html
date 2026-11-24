@@ -4,20 +4,26 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>AI Future · FTC Team #31591</title>
-	<meta name="description" content="AI Future, FIRST Tech Challenge Team #31591 from New York City. Our BIOBUZZ 2026–27 robot, engineering notebook and team." />
+	<meta name="description" content="AI Future, FIRST Tech Challenge Team #31591 from New York City. Our BIOBUZZ 2026–27 robot CR1 v6, 121 engineering notebook entries, and the sponsors who help us build in-house." />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="AI Future · FTC Team #31591" />
 	<meta property="og:title" content="AI Future · FTC Team #31591" />
-	<meta property="og:description" content="Our BIOBUZZ 2026–27 robot, engineering notebook and team." />
+	<meta property="og:description" content="Our BIOBUZZ 2026–27 robot, engineering notebook, sponsors and team." />
 	<link rel="canonical" href="https://aifutureftc.nyc/" />
 	<meta property="og:url" content="https://aifutureftc.nyc/" />
 	<meta property="og:image" content="https://aifutureftc.nyc/img/share-preview.jpg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="theme-color" content="#070b14" />
 	<link rel="icon" href="img/favicon.png" type="image/png" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap" />
 	<link rel="stylesheet" href="assets/site.css" />
+	<link rel="stylesheet" href="assets/ftc.css" />
+	<script>document.documentElement.classList.add('js');</script>
 <script>
   if (location.hostname === 'aifutureftc.nyc' && location.protocol === 'https:') {
     const tag = document.createElement('script');
@@ -46,85 +52,175 @@
 				<a href="season-story.html">Season story</a>
 				<a href="versions.html">Versions</a>
 				<a href="notebook.html">Notebook</a>
+				<a class="nav-cta" href="sponsors.html">Sponsors</a>
 			</nav>
 		</div>
 	</header>
 
 	<div class="wrap">
-		<div class="hero">
-			<p class="kicker">FIRST Tech Challenge · New York City</p>
-			<h1>AI Future, Team #31591</h1>
-			<p class="lead">We're a FIRST Tech Challenge team from AI Future. We design our robot in CAD, make many of its parts ourselves on a laser cutter and 3D printer, and write up the problems we solve in our engineering notebook.</p>
-			<div class="badges">
-				<div class="badge">Season: BIOBUZZ 2026–27</div>
-				<div class="badge">In-house robot build</div>
+		<section class="mega" aria-labelledby="hero-title">
+			<div>
+				<p class="tagline">BIOBUZZ 2026–27 · Building for Dec 20</p>
+				<h1 id="hero-title">AI Future <span class="num">#31591</span></h1>
+				<p class="lead">A FIRST Tech Challenge team from New York City. We design every part of our robot in CAD, cut and print most of it ourselves, and test it until the numbers say it works.</p>
+				<div class="cta">
+					<a class="btn" href="robot.html">Meet the robot</a>
+					<a class="btn plain" href="sponsors.html">Our sponsors</a>
+				</div>
 			</div>
+			<figure class="mega-art" style="margin:0;">
+				<img src="img/robot/cr1-v6-robot.webp" width="1400" height="1312" alt="Four CAD views of our CR1 v6 robot: wedge at the front, shooter head on a turret, plywood side plates" decoding="async" fetchpriority="high" />
+				<figcaption class="chip">CR1 v6 · in CAD</figcaption>
+			</figure>
+		</section>
+	</div>
+
+	<div class="ticker" aria-hidden="true">
+		<div>
+			<span>Topspin shooter</span><span>±90° turret</span><span>4-ball lane</span><span>Flower wedge</span><span>Closed-loop control</span><span>Made in-house</span><span>121 notebook entries</span><span>6 sponsors</span>
+			<span>Topspin shooter</span><span>±90° turret</span><span>4-ball lane</span><span>Flower wedge</span><span>Closed-loop control</span><span>Made in-house</span><span>121 notebook entries</span><span>6 sponsors</span>
 		</div>
+	</div>
 
+	<div class="wrap">
 		<main>
-			<section class="card accent" aria-labelledby="season-title">
-				<p class="kicker">This season</p>
-				<h2 id="season-title">BIOBUZZ 2026–27</h2>
-				<p>BIOBUZZ is inspired by biodiversity and the natural world. Two alliances of two robots collect game pieces and score them in hives and flowers: Pollen (balls 71 mm across) and the bigger Nectar (91 mm).</p>
-				<p>Our robot, <b>CR1 v6</b>, scores Pollen. It picks balls off the floor and out of the flower, lines them up in a lane, and shoots them with topspin from a turret. <a href="robot.html">See how it works</a>.</p>
-			</section>
-
-			<section class="card" aria-labelledby="sofar-title">
-				<p class="kicker">Updated Nov 20</p>
-				<h2 id="sofar-title">This season so far</h2>
-				<div class="stats">
-					<div class="stat"><b>114</b><span>engineering notebook entries since Sep 24</span></div>
-					<div class="stat"><b>4</b><span>robot versions: wood robot, CR1, CR1 v6, v6 METAL</span></div>
-					<div class="stat"><b>12</b><span>big decisions in our <a href="season-story.html">season story</a></span></div>
-				</div>
-				<p class="muted" style="margin-top:12px;">Honest status: our first wood robot was built and shot in class, and its parts were bench tested. In November we switched to a topspin shooter. The new robot, CR1 v6, is fully designed and checked in CAD, and we are building it now. <a href="season-story.html">Read the season story</a>.</p>
-				<div class="event">
-					<div><b>Next event: Sunday, December 20</b>Qualifier at Brooklyn Tech</div>
+			<section aria-label="Season in numbers" class="reveal">
+				<div class="kpis">
+					<div class="kpi"><b>121</b><span>engineering notebook entries since Sep 24</span></div>
+					<div class="kpi"><b>4</b><span>robot versions: wood robot, CR1, CR1 v6, v6 METAL</span></div>
+					<div class="kpi"><b>12</b><span>big decisions in our <a href="season-story.html">season story</a></span></div>
+					<div class="kpi"><b>6</b><span>companies backing our build: <a href="sponsors.html">meet them</a></span></div>
 				</div>
 			</section>
 
-			<section class="card grid" aria-labelledby="sponsor-title">
+			<section class="countdown reveal" aria-labelledby="next-title">
+				<div class="when">
+					<p class="kicker" style="color:#fff;opacity:.8;">Next event</p>
+					<b id="next-title">Qualifier · Sunday, Dec 20</b>
+					<span>Brooklyn Tech, New York City</span>
+				</div>
+				<div class="clock" data-countdown="2026-12-20T08:00:00-05:00" role="timer" aria-label="Time until the qualifier">
+					<div><b data-d>–</b><span>days</span></div>
+					<div><b data-h>–</b><span>hrs</span></div>
+					<div><b data-m>–</b><span>min</span></div>
+					<div><b data-s>–</b><span>sec</span></div>
+				</div>
+			</section>
+
+			<div class="section-head reveal">
+				<h2>The machine</h2>
+				<p>CR1 v6 scores Pollen. It picks balls off the floor and out of the flower, lines them up in a lane, and fires them with topspin from a turret.</p>
+			</div>
+			<section class="subsys" aria-label="Robot subsystems">
+				<article class="reveal">
+					<div class="ico">01</div>
+					<h3>Topspin shooter</h3>
+					<p>One printed head: flywheel on top, grippy 55° ramp under the ball, servo gate that holds each shot until we fire.</p>
+					<a href="robot.html#overview">How it shoots →</a>
+				</article>
+				<article class="reveal">
+					<div class="ico">02</div>
+					<h3>Turret + camera</h3>
+					<p>Two servos swing the head ±90°. The camera rides on top so the wedge never blocks its view of the field tags.</p>
+					<a href="robot.html#control">How we aim →</a>
+				</article>
+				<article class="reveal">
+					<div class="ico">03</div>
+					<h3>Intake + lane</h3>
+					<p>A tubing roller grabs every ball. A 4-ball lane with powered wheels keeps balls moving up to the shooter.</p>
+					<a href="notebook.html#intake">Notebook entries →</a>
+				</article>
+				<article class="reveal">
+					<div class="ico">04</div>
+					<h3>Flower wedge</h3>
+					<p>A low wedge slides under the flower's collar so Pollen rolls out to the intake. Three shapes ready to test.</p>
+					<a href="notebook.html#wedge">Notebook entries →</a>
+				</article>
+				<article class="reveal">
+					<div class="ico">05</div>
+					<h3>Closed-loop code</h3>
+					<p>Speed control on the intake and flywheel, a jam detector, a feeder that waits for full flywheel speed, odometry.</p>
+					<a href="robot.html#control">Control →</a>
+				</article>
+				<article class="reveal">
+					<div class="ico">06</div>
+					<h3>Made in-house</h3>
+					<p>All 12 plywood plates from one 2 × 4 ft sheet on our laser cutter, printed parts on our Bambu printers, metal with our sponsors.</p>
+					<a href="robot.html#build">How we build →</a>
+				</article>
+			</section>
+
+			<div class="section-head reveal">
+				<h2>Road to the qualifier</h2>
+				<p>Honest status, always: CAD only, files ready, built, or tested.</p>
+			</div>
+			<ol class="timeline reveal" aria-label="Season timeline">
+				<li><span class="d">Sep 24 – Oct 17</span><b>Wood robot</b><span>Built and shot in class. Two shooters.</span></li>
+				<li><span class="d">Oct 18 – 29</span><b>Bench rigs</b><span>Sorting and shooter tests with counts.</span></li>
+				<li><span class="d">Nov 11</span><b>CR1</b><span>Switch to one topspin shooter on a turret.</span></li>
+				<li><span class="d">Nov 17</span><b>CR1 v6</b><span>Whole robot checked in CAD, inside 18 in.</span></li>
+				<li class="now"><span class="d">Now</span><b>Cutting v6</b><span>Wood plates and prints for the build. <span class="pill">Files ready</span></span></li>
+				<li><span class="d">Dec 20</span><b>Qualifier</b><span>Brooklyn Tech. Then the v6 METAL upgrade.</span></li>
+			</ol>
+			<p class="muted" style="margin-top:12px;">Every step is in the <a href="season-story.html">season story</a> and the <a href="versions.html">robot versions</a>.</p>
+
+			<div class="section-head reveal">
+				<h2>Powered by</h2>
+				<p>These companies help us make real parts. Thank you!</p>
+			</div>
+			<section class="sponsor-wall" aria-label="Our sponsors">
+				<a class="sponsor reveal" href="sponsors.html#protocase"><div class="logo"><img src="img/sponsors/protocase.webp" width="640" height="340" alt="Protocase" loading="lazy" /></div><div class="body"><b>Protocase</b><span>Manufacturing credit for our aluminum plates</span></div></a>
+				<a class="sponsor reveal" href="sponsors.html#pcbway"><div class="logo"><span class="word">PCBWay</span></div><div class="body"><b>PCBWay</b><span>Sponsorship credit on our metal parts</span></div></a>
+				<a class="sponsor reveal" href="sponsors.html#gobilda"><div class="logo"><img src="img/sponsors/gobilda.webp" width="640" height="238" alt="goBILDA" loading="lazy" /></div><div class="body"><b>goBILDA</b><span>FTC team discount on motion parts</span></div></a>
+				<a class="sponsor reveal" href="sponsors.html#parkers"><div class="logo"><span class="word">Parker's<small>3D Prints</small></span></div><div class="body"><b>Parker's 3D Prints</b><span>3D printing of robot parts</span></div></a>
+				<a class="sponsor reveal" href="sponsors.html#atomic"><div class="logo"><span class="word">Atomic<small>Filament</small></span></div><div class="body"><b>Atomic Filament</b><span>Discount on our printer filament</span></div></a>
+				<a class="sponsor reveal" href="sponsors.html#lisp"><div class="logo"><img src="img/sponsors/li-screen-printing.webp" width="640" height="298" alt="Long Island Screen Printing" loading="lazy" /></div><div class="body"><b>Long Island Screen Printing</b><span>Our team shirts</span></div></a>
+			</section>
+
+			<section class="ask reveal" style="margin-top:20px;" aria-labelledby="ask-title">
 				<div>
-					<p class="kicker">In-kind sponsorship</p>
-					<h2 id="sponsor-title">Help us build our BIOBUZZ robot</h2>
-					<p>Team #31591 is looking for materials and fabrication help for our next round of prototypes.</p>
-					<ul class="clean">
-						<li><strong>3D printer filament</strong> for intake and shooter prototypes.</li>
-						<li><strong>Laser-cutting stock</strong> such as plywood sheets for chassis panels and mounting plates.</li>
-						<li><strong>Custom fabrication</strong> for brackets and other parts we design in CAD.</li>
+					<p class="kicker">Join the build</p>
+					<h2 id="ask-title">Put your name on our robot</h2>
+					<p>We're still looking for help with:</p>
+					<ul>
+						<li><b>Laser-cutting stock</b>: 1/4 in plywood sheets for plates and panels.</li>
+						<li><b>3D printer filament</b>: PLA and PETG for the shooter head, lane and brackets.</li>
+						<li><b>Travel + event costs</b> for the qualifier and beyond.</li>
 					</ul>
-					<a class="btn blue" href="https://aifuture.nyc/sponsor?interest=ftc#inquiry">Sponsor Team #31591</a>
 				</div>
-				<figure class="big-figure">
-					<img src="img/robot/cr1-v6-robot.webp" width="1400" height="1312" alt="Four CAD views of our CR1 v6 robot: wedge at the front, shooter head on a turret, plywood side plates" loading="lazy" decoding="async" />
-					<figcaption>Our BIOBUZZ robot, CR1 v6, in CAD. <a href="robot.html#overview">See how it works</a>.</figcaption>
-				</figure>
-			</section>
-
-			<section aria-labelledby="awards-title">
-				<h2 id="awards-title" style="margin:28px 0 12px;">For judges</h2>
-				<div class="grid">
-					<article class="card award">
-						<span class="tag">Design</span>
-						<h3>How our robot works</h3>
-						<p>CR1 v6 part by part, how we make it in-house, and how we control it.</p>
-						<a class="btn blue" href="robot.html">Robot</a>
-					</article>
-					<article class="card award">
-						<span class="tag">Think</span>
-						<h3>Our engineering process</h3>
-						<p>114 notebook entries, each in one sentence, grouped by part of the robot and by robot version.</p>
-						<div class="btns"><a class="btn" href="season-story.html">Season story</a><a class="btn plain" href="versions.html">Versions</a><a class="btn plain" href="notebook.html">All entries</a></div>
-					</article>
+				<div>
+					<a class="btn" href="https://aifuture.nyc/sponsor?interest=ftc#inquiry">Sponsor Team #31591</a>
+					<a class="btn plain" href="sponsors.html">What sponsors get</a>
 				</div>
 			</section>
 
-			<section class="card" aria-labelledby="follow-title">
-				<h2 id="follow-title">Follow us</h2>
+			<div class="section-head reveal">
+				<h2>For judges</h2>
+				<p>Start here for the Design, Think and Control awards.</p>
+			</div>
+			<section class="grid" aria-label="Pages for judges">
+				<article class="card award reveal">
+					<span class="tag">Design</span>
+					<h3>How our robot works</h3>
+					<p>CR1 v6 part by part, how we make it in-house, and how we control it.</p>
+					<a class="btn" href="robot.html">Robot</a>
+				</article>
+				<article class="card award reveal">
+					<span class="tag">Think</span>
+					<h3>Our engineering process</h3>
+					<p>121 notebook entries, each in one sentence, grouped by part of the robot and by robot version.</p>
+					<div class="btns"><a class="btn" href="season-story.html">Season story</a><a class="btn plain" href="versions.html">Versions</a><a class="btn plain" href="notebook.html">All entries</a></div>
+				</article>
+			</section>
+
+			<section class="card reveal" style="margin-top:20px;" aria-labelledby="follow-title">
+				<h2 id="follow-title">Follow the build</h2>
 				<p>Build videos and team updates from AI Future.</p>
-				<a class="btn blue" href="https://www.instagram.com/aifutureny" target="_blank" rel="noreferrer">Instagram</a>
-				<a class="btn blue" href="https://www.tiktok.com/@aifuturenyc" target="_blank" rel="noreferrer">TikTok</a>
-				<a class="btn blue" href="https://www.youtube.com/@AIFutureRobotics" target="_blank" rel="noreferrer">YouTube</a>
+				<div class="socials">
+					<a class="btn blue" href="https://www.instagram.com/aifutureny" target="_blank" rel="noreferrer">Instagram</a>
+					<a class="btn blue" href="https://www.tiktok.com/@aifuturenyc" target="_blank" rel="noreferrer">TikTok</a>
+					<a class="btn blue" href="https://www.youtube.com/@AIFutureRobotics" target="_blank" rel="noreferrer">YouTube</a>
+				</div>
 			</section>
 		</main>
 	</div>
@@ -135,5 +231,6 @@
 			<span>Part of <a href="https://aifuture.nyc">AI Future</a> · Our FLL team: <a href="https://aifuture1.org">AI Future 1</a></span>
 		</div>
 	</footer>
+	<script src="assets/ftc.js" defer></script>
 </body>
 </html>

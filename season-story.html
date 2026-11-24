@@ -15,7 +15,13 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<link rel="icon" href="img/favicon.png" type="image/png" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<meta name="theme-color" content="#070b14" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap" />
 	<link rel="stylesheet" href="assets/site.css" />
+	<link rel="stylesheet" href="assets/ftc.css" />
+	<script>document.documentElement.classList.add('js');</script>
 <script>
   if (location.hostname === 'aifutureftc.nyc' && location.protocol === 'https:') {
     const tag = document.createElement('script');
@@ -44,6 +50,7 @@
 				<a href="season-story.html" aria-current="page">Season story</a>
 				<a href="versions.html">Versions</a>
 				<a href="notebook.html">Notebook</a>
+				<a class="nav-cta" href="sponsors.html">Sponsors</a>
 			</nav>
 		</div>
 	</header>
@@ -52,7 +59,7 @@
 		<div class="hero">
 			<p class="kicker">Think · BIOBUZZ 2026–27</p>
 			<h1>Our season story</h1>
-			<p class="lead">From September 24 to November 20 we wrote 114 notebook entries. These are the twelve decisions that shaped our robot the most, in order. Each one links to the entries behind it.</p>
+			<p class="lead">From September 24 to November 23 we wrote 121 notebook entries. These are the twelve decisions that shaped our robot the most, in order. Each one links to the entries behind it.</p>
 			<div class="badges">
 				<div class="badge">Start: a plywood robot with two shooters</div>
 				<div class="badge">Now: CR1 v6, a Pollen robot with a topspin shooter on a turret</div>
@@ -224,9 +231,9 @@
 
 			<section class="card" aria-labelledby="next-title">
 				<h2 id="next-title">What's next</h2>
-				<p>CR1 v6 is fully designed and checked in CAD, but <b>not built yet</b>. Before the qualifier on <b>Sunday, December 20</b> we will:</p>
+				<p>CR1 v6 is fully designed and checked in CAD, and its wood cut files and print files are released (<a href="notebook.html#en-119">EN-119</a> – <a href="notebook.html#en-121">EN-121</a>). It is <b>not built yet</b>. Before the qualifier on <b>Sunday, December 20</b> we will:</p>
 				<ol class="steps">
-					<li><span>Cut the aluminum and plywood plates and print the parts.</span></li>
+					<li><span>Cut the 12 plywood plates from one sheet and print the parts. The aluminum plates come after, with our <a href="sponsors.html">sponsors</a>.</span></li>
 					<li><span>Build the robot and measure it against the 18 in box.</span></li>
 					<li><span>Test with counts: pickups out of 20, shots in out of 10, flower pickups out of 20.</span></li>
 					<li><span>Tune the shooter speed control and the turret aim, and write the results in the notebook.</span></li>
@@ -241,5 +248,6 @@
 			<span><a href="index.html">Home</a> · <a href="versions.html">Versions</a> · <a href="notebook.html">Notebook</a></span>
 		</div>
 	</footer>
+	<script src="assets/ftc.js" defer></script>
 </body>
 </html>

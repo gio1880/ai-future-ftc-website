@@ -15,7 +15,13 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<link rel="icon" href="img/favicon.png" type="image/png" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<meta name="theme-color" content="#070b14" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap" />
 	<link rel="stylesheet" href="assets/site.css" />
+	<link rel="stylesheet" href="assets/ftc.css" />
+	<script>document.documentElement.classList.add('js');</script>
 <script>
   if (location.hostname === 'aifutureftc.nyc' && location.protocol === 'https:') {
     const tag = document.createElement('script');
@@ -44,13 +50,14 @@
 				<a href="season-story.html">Season story</a>
 				<a href="versions.html">Versions</a>
 				<a href="notebook.html">Notebook</a>
+				<a class="nav-cta" href="sponsors.html">Sponsors</a>
 			</nav>
 		</div>
 	</header>
 
 	<div class="wrap">
 		<div class="hero">
-			<p class="kicker">Design · BIOBUZZ 2026–27 · Updated Nov 20</p>
+			<p class="kicker">Design · BIOBUZZ 2026–27 · Updated Nov 23</p>
 			<h1>Our robot: CR1 v6</h1>
 			<p class="lead">We design the whole robot in CAD and make most of it ourselves: plywood and aluminum plates on a laser cutter, and custom parts on 3D printers. This page shows the robot we are building for the qualifier on December 20.</p>
 			<div class="badges">
@@ -66,15 +73,15 @@
 				<p>A roller at the front picks Pollen off the floor. The ball waits in a <b>4-ball lane</b> down the middle of the robot. A pair of wheels squeezes it up into the <b>shooter head</b>, where a spinning wheel on top launches it with <b>topspin</b>, so it rolls into the hive instead of bouncing out. The head sits on a <b>turret</b> that turns ±90°, with a <b>camera</b> on top to aim. A <b>wedge</b> at the front slides under Pollen in the flower so it rolls out to the intake.</p>
 				<figure class="big-figure">
 					<img src="img/robot/cr1-v6-robot.webp" width="1400" height="1312" alt="Four CAD views of CR1 v6: front-left, rear-right, top and left side. Green wedge on two arms at the front, purple shooter head with a green flywheel on a turret, plywood side plates and black robot signs" decoding="async" />
-					<figcaption>CR1 v6 in CAD, Nov 17 (<a href="notebook.html#en-108">EN-108</a>). Since then the side plates went to aluminum, the lane became two prints, and the camera moved to the top of the head (below).</figcaption>
+					<figcaption>CR1 v6 in CAD, Nov 17 (<a href="notebook.html#en-108">EN-108</a>). Since then the lane became two prints, the camera moved to the top of the head, the lane drive got simpler, and the side plates were split to fit our own laser (below).</figcaption>
 				</figure>
 				<div class="table-wrap">
 					<table>
 						<thead><tr><th>Part</th><th>What it is now</th><th>Status</th></tr></thead>
 						<tbody>
-							<tr><td><b>Drivetrain</b></td><td>Two pods, each with 2 goBILDA motors, chain drive and 104 mm mecanum wheels. Full-length side plates; the main plates in 1/8 in aluminum. <a href="notebook.html#en-107">EN-107</a> · <a href="notebook.html#en-108">EN-108</a> · <a href="notebook.html#en-111">EN-111</a></td><td><span class="pill">Files ready</span></td></tr>
-							<tr><td><b>Intake + lane</b></td><td>A tubing roller touches every ball first. A plate keeps Nectar out. The lane is two 3D prints and holds 4 balls, with 3 small wheels so a ball never sits still. <a href="notebook.html#en-112">EN-112</a> · <a href="notebook.html#en-113">EN-113</a></td><td><span class="pill">Files ready</span></td></tr>
-							<tr><td><b>Transfer</b></td><td>A front and a back wheel squeeze the ball up into the head, on one motor with one chain. <a href="notebook.html#en-105">EN-105</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Drivetrain</b></td><td>Two pods, each with 2 goBILDA motors, chain drive and 104 mm mecanum wheels. Plywood side plates for the qualifier, all cut from one sheet; the main plates in 1/8 in aluminum later, with our <a href="sponsors.html">sponsors</a>. <a href="notebook.html#en-108">EN-108</a> · <a href="notebook.html#en-111">EN-111</a> · <a href="notebook.html#en-119">EN-119</a> · <a href="notebook.html#en-120">EN-120</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Intake + lane</b></td><td>A tubing roller touches every ball first. A plate keeps Nectar out. The lane is two 3D prints and holds 4 balls, with 3 small wheels so a ball never sits still. A tighter guide keeps the last ball moving into the head. <a href="notebook.html#en-112">EN-112</a> · <a href="notebook.html#en-113">EN-113</a> · <a href="notebook.html#en-120">EN-120</a></td><td><span class="pill">Files ready</span></td></tr>
+							<tr><td><b>Transfer</b></td><td>A front and a back wheel squeeze the ball up into the head. Intake and transfer now run on their own drives, with fewer sprockets and steel hubs. <a href="notebook.html#en-105">EN-105</a> · <a href="notebook.html#en-121">EN-121</a></td><td><span class="pill">Files ready</span></td></tr>
 							<tr><td><b>Shooter head</b></td><td>One printed piece. Flywheel on top, grippy 55° ramp under the ball, motor tucked behind and under the wheel. A servo gate holds the ball until we fire. <a href="notebook.html#en-102">EN-102</a> · <a href="notebook.html#en-103">EN-103</a> · <a href="notebook.html#en-114">EN-114</a></td><td><span class="pill test">Rig shot well</span><br /><span class="muted" style="font-size:13px;">final print not made</span></td></tr>
 							<tr><td><b>Turret + camera</b></td><td>A 6 in lazy susan turned by 2 REV servos, ±90°. A webcam on a mast on top of the head. <a href="notebook.html#en-104">EN-104</a> · <a href="notebook.html#en-114">EN-114</a></td><td><span class="pill">Files ready</span></td></tr>
 							<tr><td><b>Flower wedge</b></td><td>A full-width wedge on two short arms outside the pods, moved by a servo. Three low shapes to test on the real flower. <a href="notebook.html#en-100">EN-100</a> · <a href="notebook.html#en-115">EN-115</a></td><td><span class="pill">Test slices ready</span></td></tr>
@@ -82,7 +89,7 @@
 						</tbody>
 					</table>
 				</div>
-				<p class="status"><b>Honest status:</b> CR1 v6 is fully designed and checked in CAD (no parts clash, the ball path is clear, it fits the 18 in box). It is <b>not built yet</b>. The topspin head was tried on a bench rig and shot much more consistently than our old hood shooter. Next: cut, print, build, then test with counts. <a href="season-story.html#next-title">What's next</a></p>
+				<p class="status"><b>Honest status:</b> CR1 v6 is fully designed and checked in CAD (no parts clash, the ball path is clear, it fits the 18 in box). The wood cut files and print files are released, and we are building it now. It is <b>not built yet</b>. The topspin head was tried on a bench rig and shot much more consistently than our old hood shooter. Next: cut, print, build, then test with counts. <a href="season-story.html#next-title">What's next</a></p>
 			</section>
 
 			<section class="card" id="parts" aria-labelledby="parts-title">
@@ -112,6 +119,18 @@
 							<ul><li>3 shapes to print and test</li><li>Measure the flower first</li></ul>
 						</figcaption>
 					</figure>
+					<figure>
+						<img src="img/robot/wood-cheeks.webp" width="1200" height="650" alt="Four plywood side plates drawn flat: two inner plates with triangle pockets and two outer plates, each 370 mm long" loading="lazy" decoding="async" />
+						<figcaption><b>Wood side plates · Nov 23</b>
+							<ul><li>370 mm long: fits our Falcon laser</li><li>All 12 plates from one sheet</li></ul>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/robot/motor-walls.webp" width="1440" height="675" alt="CAD of the lane side plates with three motors and orange printed bearing walls holding the shaft ends" loading="lazy" decoding="async" />
+						<figcaption><b>Shaft supports · Nov 23</b>
+							<ul><li>Printed walls hold the shafts</li><li>Stops the motor shaft walking out</li></ul>
+						</figcaption>
+					</figure>
 				</div>
 				<p class="muted" style="margin-top:12px;">How we got here, version by version: <a href="versions.html">wood robot → CR1 → CR1 v6 → v6 METAL</a>.</p>
 			</section>
@@ -125,7 +144,8 @@
 							<li><b>1/4 in plywood</b> for plates and panels. Our Falcon A1 bed is <b>305 × 381 mm</b>, so early plates were split with seams that step around bolt holes. <a href="notebook.html#en-01">EN-01</a></li>
 							<li>The CR1 v6 side plates are longer, so we cut them whole on a bigger <b>Glowforge</b> (495 × 279 mm bed). <a href="notebook.html#en-107">EN-107</a></li>
 							<li>Plates are pocketed with straight struts between the holes we use, so they are light but strong. <a href="notebook.html#en-95">EN-95</a></li>
-							<li>The sponsor plates are cut in <b>1/8 in aluminum</b> from the same files. <a href="notebook.html#en-111">EN-111</a></li>
+							<li>All <b>12 plywood plates</b> fit on <b>one 2 × 4 ft sheet</b>: we saw it into 7 boards, then laser-cut them. <a href="notebook.html#en-119">EN-119</a></li>
+							<li>The metal version is cut in <b>1/8 in aluminum</b> from the same files, with our sponsors <a href="sponsors.html#protocase">Protocase</a> and <a href="sponsors.html#pcbway">PCBWay</a>. <a href="notebook.html#en-111">EN-111</a></li>
 						</ul>
 					</div>
 					<div>
@@ -159,7 +179,7 @@
 							<li><b>Sensor:</b> the encoder on the flywheel motor counts how fast it turns.</li>
 							<li><b>Problem:</b> with a fixed power, the wheel slows when the battery runs low and after each shot, so shots land in different places. Our study found that just 3% too fast or slow loses half of the distance range where we score.</li>
 							<li><b>How it works:</b> we set a target speed. Many times a second the Control Hub compares the real speed with the target and adds or takes away power (a PIDF loop). FTC Dashboard draws live graphs so we can tune it.</li>
-							<li><b>Status:</b> the code builds; tuning waits for the robot. <a href="notebook.html#en-43">EN-43</a> · <a href="notebook.html#en-90">EN-90</a></li>
+							<li><b>Status:</b> the code builds; tuning waits for the robot. <a href="notebook.html#en-43">EN-43</a> · <a href="notebook.html#en-90">EN-90</a> · <a href="notebook.html#en-117">EN-117</a></li>
 						</ul>
 					</article>
 					<article>
@@ -172,6 +192,8 @@
 						</ul>
 					</article>
 				</div>
+				<h3 style="margin-top:16px;">Intake and feeder</h3>
+				<p>The intake runs on <b>speed control</b> too, so a ball in the roller doesn't slow it down. If the roller jams, the code notices, backs it out, and tries again. The feeder only pushes a ball into the shooter when the flywheel is at <b>95%</b> of its target speed, so every shot leaves at the same speed. The code is written; tuning on the robot is next. <a href="notebook.html#en-117">EN-117</a></p>
 				<h3 style="margin-top:16px;">Aiming the turret</h3>
 				<p>Two REV servos turn the turret through printed gears, ±90°. The webcam on top of the head looks forward, 30° up, so it can see the field's tags. The plan is to use the camera to point the turret at the hive. This code is <b>not written yet</b>. <a href="notebook.html#en-103">EN-103</a> · <a href="notebook.html#en-114">EN-114</a></p>
 			</section>
@@ -184,5 +206,6 @@
 			<span><a href="index.html">Home</a> · <a href="season-story.html">Season story</a> · <a href="notebook.html">Notebook</a></span>
 		</div>
 	</footer>
+	<script src="assets/ftc.js" defer></script>
 </body>
 </html>
