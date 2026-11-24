@@ -27,3 +27,4 @@ NOW: Claude@Main · competitive redesign + sponsors
 RELEASED
 2026-11-24 09:05 · Claude@Main · competitive redesign + sponsors · Real logos for PCBWay + Parker's (from their Nov 23 emails) and Atomic (from atomicfilament.com header) replace the text wordmarks · Atomic: confirm logo permission with John
 RELEASED
+2026-11-24 09:15 · Claude@Main · competitive redesign + sponsors · Giovanny asked to merge: PR #4 merged (adb212e), Pages built, all 7 pages live (200), no console errors · -
